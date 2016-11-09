@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Xposed,Xposed 介绍,Xposed 框架," />
 
 
 
@@ -86,15 +86,16 @@
 
 
 
-<meta name="description" content="喝最烈的酒，日最野的狗！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="对路哟">
-<meta property="og:url" content="http://yoursite.com/tags/GitHub/index.html">
+<meta name="description" content="Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Xposed 框架的安装及使用流程（简单介绍）">
+<meta property="og:url" content="http://yoursite.com/2016/11/09/postName-1/index.html">
 <meta property="og:site_name" content="对路哟">
-<meta property="og:description" content="喝最烈的酒，日最野的狗！">
+<meta property="og:description" content="Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。">
+<meta property="og:updated_time" content="2016-11-09T18:38:01.185Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="对路哟">
-<meta name="twitter:description" content="喝最烈的酒，日最野的狗！">
+<meta name="twitter:title" content="Xposed 框架的安装及使用流程（简单介绍）">
+<meta name="twitter:description" content="Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。">
 
 
 
@@ -115,10 +116,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/GitHub/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/09/postName-1/"/>
 
 
-  <title> 标签: GitHub | 对路哟 </title>
+  <title> Xposed 框架的安装及使用流程（简单介绍） | 对路哟 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -139,7 +140,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -227,46 +228,135 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        GitHub
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Xposed 框架的安装及使用流程（简单介绍）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-09T00:00:00+08:00" content="2016-11-09">
+              2016-11-09
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
+      
+        <p>Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。<a id="more"></a></p>
+<h1 id="Xposed框架如何安装"><a href="#Xposed框架如何安装" class="headerlink" title="Xposed框架如何安装"></a>Xposed框架如何安装</h1><p>Xposed 框架需要Android 4.0.3及更高版本才能安装，不过也有非官方支持的2.3版本，目前已经支持到Android 6.0版本，不过不同版本之间可能需要不同Xposed installer APP，目测会向后兼容。Xposed 框架也需要有ROOT授权才能正常使用，安装则不需要ROOT，目前已经支持中文。</p>
+<p>正确的启用姿势如下：</p>
+<p>安装 Xposed 框架安装器</p>
+<p>激活 Xposed 框架</p>
+<ul>
+<li>点击后进入框架安装、升级界面，我们点击“安装/更新”，会出现ROOT授权提示，许可即可。</li>
+</ul>
+<p>重启</p>
+<p>选择模块</p>
+<ul>
+<li>我们安装Xposed 框架是为了使用各种模块，而增强手机的各种功能。在Xposed 框架安装器中可以点击“下载”进入模块仓库下载自己需要的模块。</li>
+</ul>
+<p>重启</p>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/11/06/postName/" itemprop="url">
-              
-                <span itemprop="name">使用GitHub和Hexo搭建免费静态Blog</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-06T07:56:27+08:00"
-              content="2016-11-06" >
-          11-06
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Xposed-Xposed-介绍-Xposed-框架/" rel="tag">#Xposed,Xposed 介绍,Xposed 框架</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/06/postName/" rel="next" title="使用GitHub和Hexo搭建免费静态Blog">
+                <i class="fa fa-chevron-left"></i> 使用GitHub和Hexo搭建免费静态Blog
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -274,6 +364,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -293,8 +387,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -344,6 +447,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Xposed框架如何安装"><span class="nav-number">1.</span> <span class="nav-text">Xposed框架如何安装</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -447,6 +561,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 
