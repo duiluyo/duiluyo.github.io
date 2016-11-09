@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-09T18:40:45.886Z</updated>
+  <updated>2016-11-09T21:24:27.587Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,11 @@
     <link href="http://yoursite.com/2016/11/09/postName-1/"/>
     <id>http://yoursite.com/2016/11/09/postName-1/</id>
     <published>2016-11-08T16:00:00.000Z</published>
-    <updated>2016-11-09T18:40:45.886Z</updated>
+    <updated>2016-11-09T21:24:27.587Z</updated>
     
     <content type="html"><![CDATA[<p>Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。<a id="more"></a></p>
 <h1 id="Xposed框架如何安装"><a href="#Xposed框架如何安装" class="headerlink" title="Xposed框架如何安装"></a>Xposed框架如何安装</h1><p>Xposed 框架需要Android 4.0.3及更高版本才能安装，不过也有非官方支持的2.3版本，目前已经支持到Android 6.0版本，不过不同版本之间可能需要不同Xposed installer APP，目测会向后兼容。Xposed 框架也需要有ROOT授权才能正常使用，安装则不需要ROOT，目前已经支持中文。</p>
-<p>正确的启用姿势如下：</p>
-<p>安装 Xposed 框架安装器</p>
+<h2 id="正确的启用姿势如下："><a href="#正确的启用姿势如下：" class="headerlink" title="正确的启用姿势如下："></a>正确的启用姿势如下：</h2><p>安装 Xposed 框架安装器</p>
 <p>激活 Xposed 框架</p>
 <ul>
 <li>点击后进入框架安装、升级界面，我们点击“安装/更新”，会出现ROOT授权提示，许可即可。</li>
