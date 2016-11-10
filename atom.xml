@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-09T21:24:27.587Z</updated>
+  <updated>2016-11-10T03:46:45.465Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,13 +16,112 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown 新手指南</title>
+    <link href="http://yoursite.com/2016/11/10/postName-2/"/>
+    <id>http://yoursite.com/2016/11/10/postName-2/</id>
+    <published>2016-11-09T16:00:00.000Z</published>
+    <updated>2016-11-10T03:46:45.465Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><h3 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h3><p><strong>Markdown</strong>是一种极简的标记语言，可以轻易的将文本转化为HTML。语法非常容易学习，简单到每个人都可以在5分钟之内学会。Markdown之所以越来越流行，不是因为它复杂，而是因为他足够简单。<br><a id="more"></a></p>
+<h3 id="Markdown优点"><a href="#Markdown优点" class="headerlink" title="Markdown优点"></a>Markdown优点</h3><ul>
+<li>纯文本编写，兼容性很强，可以使用所有文本编辑器打开</li>
+<li>让写作者专注与文字而不是排版</li>
+<li>格式转换方便，可以将MarkDown文本轻易转换为HTML，电子书等</li>
+</ul>
+<h3 id="与word对比"><a href="#与word对比" class="headerlink" title="与word对比"></a>与word对比</h3><ul>
+<li>使用word写文档需要浪费大量时间在word本身上，特别是那80%我们用不到的功能</li>
+<li>浪费时间在排版上，需要花费大量时间用在调整粗体或者斜体，黑体还是宋体上</li>
+</ul>
+<h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>标题有两种方式：Setext方式和Atx方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Setext方式，三个或更多的=或者-</div><div class="line">大标题</div><div class="line">===</div><div class="line">小标题</div><div class="line">---</div></pre></td></tr></table></figure>
+<h1 id="大标题"><a href="#大标题" class="headerlink" title="大标题"></a>大标题</h1><h2 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Atx方式，在标题前面加上#号，总共分为6个等级，#号越多，标题字号越小</div><div class="line"># 一级标题</div><div class="line">## 二级标题</div><div class="line">### 三级标题</div><div class="line">#### 四级标题</div><div class="line">##### 五级标题</div><div class="line">###### 六级标题</div></pre></td></tr></table></figure>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>无序列表，只需要在文字前面加上<code>-</code>,<code>+</code>或者<code>×</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- 文本1</div><div class="line">- 文本2</div><div class="line">- 文本3</div></pre></td></tr></table></figure>
+<ul>
+<li>文本1</li>
+<li>文本2</li>
+<li>文本3</li>
+</ul>
+<p>有序列表，只需要在文字前面加上<code>1.</code>， <code>2.</code>， <code>3.</code>等。前面序号只是代表语法标记，真正序号与我们所写的内容并无实际关系，例如：我将文本3的序号标记为4，但效果仍然显示为3。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1. 文本1</div><div class="line">2. 文本2</div><div class="line">4. 文本3</div></pre></td></tr></table></figure>
+<ol>
+<li>文本1</li>
+<li>文本2</li>
+<li>文本3</li>
+</ol>
+<p>嵌套列表，<code>-</code>，<code>+</code>，<code>*</code>可循环使用，但符号之后的空格不能少，符号之前的空格也不能少</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">- 一级列表</div><div class="line">  + 二级列表</div><div class="line">  + 二级列表</div><div class="line">    × 三级列表</div><div class="line">      - 四级列表</div><div class="line">- 一级列表</div><div class="line">```language</div></pre></td></tr></table></figure>
+<ul>
+<li>一级列表</li>
+<li>二级列表</li>
+<li>二级列表</li>
+<li>三级列表</li>
+<li><p>四级列表</p>
+</li>
+<li><p>一级列表</p>
+</li>
+</ul>
+<h3 id="链接和图片"><a href="#链接和图片" class="headerlink" title="链接和图片"></a>链接和图片</h3><p>链接，插入链接只需要使用<code>[显示文本](连接地址 Tooltips)</code>这样的语法实现，Tooltips可以省略，Tooltips表示鼠标悬浮时候的文本提示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[百度](http://www.baidu.com)</div></pre></td></tr></table></figure>
+<p><a href="http://www.baidu.com" target="_blank" rel="external">百度</a> </p>
+<p>图片，插入图片只需要使用<code>![](图片链接 Tooptips)</code>这样的语法实现，Tooltips可以省略</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![](http://ww4.sinaimg.cn/bmiddle/aa397b7fjw1dzplsgpdw5j.jpg &quot;埃菲尔铁塔&quot;)</div></pre></td></tr></table></figure>
+<p><img src="http://ww4.sinaimg.cn/bmiddle/aa397b7fjw1dzplsgpdw5j.jpg" alt="埃菲尔铁塔"> </p>
+<p>自动链接，直接显示链接网址，点击可以跳转</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">//www.sina.com&gt;</div></pre></td></tr></table></figure>
+<p><a href="http://www.sina.com" target="_blank" rel="external">http://www.sina.com</a> </p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>在我们写作的时候经常需要引用他人的文字，这时候就需要用到引用这个格式。这时候我们就需要在文字前面加上<code>&gt;</code>来表示引用内容。可以嵌套使用表示多级引用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt; 以眼看世界，即使站的最高，世界还是很小；以心看世界，即使身处局限，世界依然很大</div></pre></td></tr></table></figure>
+<blockquote>
+<p>以眼看世界，即使站的最高，世界还是很小；以心看世界，即使身处局限，世界依然很大</p>
+</blockquote>
+<h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><p>被<code>**</code>包含的表示<em>斜体</em>，被<code>****</code>包含的表示<strong>粗体</strong>，其中的<code>*</code>也可以换成<code>_</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">**一个人来到田纳西**</div><div class="line">__毫无疑问__</div><div class="line">*我做的馅饼</div><div class="line">是全天下*</div><div class="line">_最好吃的_</div></pre></td></tr></table></figure>
+<p><strong>一个人来到田纳西</strong><br><strong>毫无疑问</strong><br><em>我做的馅饼<br>是全天下</em><br><em>最好吃的</em></p>
+<h3 id="分隔符"><a href="#分隔符" class="headerlink" title="分隔符"></a>分隔符</h3><p><code>***</code>表示page break；<code>---</code>表示section break；<code>___</code>表示sentence break；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">page break</div><div class="line"></div><div class="line">***</div><div class="line">section break</div><div class="line"></div><div class="line">---</div><div class="line">sentence break</div><div class="line"></div><div class="line">___</div></pre></td></tr></table></figure>
+<p>page break</p>
+<hr>
+<p>section break</p>
+<hr>
+<p>sentence break</p>
+<hr>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>使用` {codeblock}<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">   ```<span class="function">java</span></div><div class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span>&#123;</div><div class="line"></div><div class="line">   &#125;</div><div class="line">``` `</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">publicstaticvoidmain(String[] args)&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="特殊表示"><a href="#特殊表示" class="headerlink" title="特殊表示"></a>特殊表示</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">~~删除元素~~</div><div class="line">++下划线++</div><div class="line">==高亮显示==</div></pre></td></tr></table></figure>
+<p>删除元素<br>++下划线++<br>==高亮显示==</p>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;Markdown简介&quot;&gt;&lt;a href=&quot;#Markdown简介&quot; class=&quot;headerlink&quot; title=&quot;Markdown简介&quot;&gt;&lt;/a&gt;Markdown简介&lt;/h2&gt;&lt;h3 id=&quot;Markdown是什么&quot;&gt;&lt;a href=&quot;#Markdown是什么&quot; class=&quot;headerlink&quot; title=&quot;Markdown是什么&quot;&gt;&lt;/a&gt;Markdown是什么&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt;是一种极简的标记语言，可以轻易的将文本转化为HTML。语法非常容易学习，简单到每个人都可以在5分钟之内学会。Markdown之所以越来越流行，不是因为它复杂，而是因为他足够简单。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+    
+      <category term="新手指南" scheme="http://yoursite.com/tags/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Xposed 框架的安装及使用流程（简单介绍）</title>
     <link href="http://yoursite.com/2016/11/09/postName-1/"/>
     <id>http://yoursite.com/2016/11/09/postName-1/</id>
     <published>2016-11-08T16:00:00.000Z</published>
-    <updated>2016-11-09T21:24:27.587Z</updated>
+    <updated>2016-11-10T03:48:59.586Z</updated>
     
-    <content type="html"><![CDATA[<p>Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。<a id="more"></a></p>
+    <content type="html"><![CDATA[<hr>
+<p>Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。<a id="more"></a></p>
 <h1 id="Xposed框架如何安装"><a href="#Xposed框架如何安装" class="headerlink" title="Xposed框架如何安装"></a>Xposed框架如何安装</h1><p>Xposed 框架需要Android 4.0.3及更高版本才能安装，不过也有非官方支持的2.3版本，目前已经支持到Android 6.0版本，不过不同版本之间可能需要不同Xposed installer APP，目测会向后兼容。Xposed 框架也需要有ROOT授权才能正常使用，安装则不需要ROOT，目前已经支持中文。</p>
 <h2 id="正确的启用姿势如下："><a href="#正确的启用姿势如下：" class="headerlink" title="正确的启用姿势如下："></a>正确的启用姿势如下：</h2><p>安装 Xposed 框架安装器</p>
 <p>激活 Xposed 框架</p>
@@ -35,11 +134,13 @@
 <li>我们安装Xposed 框架是为了使用各种模块，而增强手机的各种功能。在Xposed 框架安装器中可以点击“下载”进入模块仓库下载自己需要的模块。</li>
 </ul>
 <p>重启</p>
+<hr>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。
+      &lt;hr&gt;
+&lt;p&gt;Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。
     
     </summary>
     
