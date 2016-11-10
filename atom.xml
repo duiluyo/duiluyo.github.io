@@ -118,12 +118,12 @@
     <link href="http://yoursite.com/2016/11/10/postName-3/"/>
     <id>http://yoursite.com/2016/11/10/postName-3/</id>
     <published>2016-11-09T16:00:00.000Z</published>
-    <updated>2016-11-10T09:38:41.335Z</updated>
+    <updated>2016-11-10T09:40:47.640Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>微盘挂了，360倒了，百度云盘也立了Flag。能让我们在云端储存分享文件的服务越来越少了。 买一堆移动硬盘既不方便也不能解决实际需求。而事实上，你其实可以选择搭建只属于自己的至尊私享云盘服务！</p>
-<p>ownCloud 是一个开源免费的云端文件储存分享平台，它支持包括网页、PC客户端、移动App在内的所有终端使用。 你可以搭建一个给自己用，也可以搭建好之后同朋友和家人分享。</p>
+<p>微盘挂了，360倒了，百度云盘也立了Flag。能让我们在云端储存分享文件的服务越来越少了。买一堆移动硬盘既不方便也不能解决实际需求。而事实上，你其实可以选择搭建只属于自己的至尊私享云盘服务！</p>
+<p>ownCloud是一个开源免费的云端文件储存分享平台，<a id="more"></a>它支持包括网页、PC客户端、移动App在内的所有终端使用。 你可以搭建一个给自己用，也可以搭建好之后同朋友和家人分享。</p>
 <p>最快捷！使用 Docker 的 ownCloud 镜像</p>
 <p>通过这种方法你几乎不需要懂得多少编程知识，你可以选用 DaoCloud 一类的在线Docker服务平台。</p>
 </blockquote>
@@ -177,7 +177,8 @@
     
       &lt;hr&gt;
 &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;微盘挂了，360倒了，百度云盘也立了Flag。能让我们在云端储存分享文件的服务越来越少了。 买一堆移动硬
+&lt;p&gt;微盘挂了，360倒了，百度云盘也立了Flag。能让我们在云端储存分享文件的服务越来越少了。买一堆移动硬盘既不方便也不能解决实际需求。而事实上，你其实可以选择搭建只属于自己的至尊私享云盘服务！&lt;/p&gt;
+&lt;p&gt;ownCloud是一个开源免费的云端文件储存分享平台，
     
     </summary>
     
