@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-10T03:46:45.465Z</updated>
+  <updated>2016-11-14T20:20:08.671Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,14 +16,152 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>技能冷却哟～</title>
+    <link href="http://yoursite.com/2016/11/15/postName-4/"/>
+    <id>http://yoursite.com/2016/11/15/postName-4/</id>
+    <published>2016-11-14T16:00:00.000Z</published>
+    <updated>2016-11-14T20:20:08.671Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<p>哎～好几次失败弄的我全无乐趣！是时候暂停暂停了，哈哈哈！！！嗯～应该去哪里浪呢？？？这是个问题！！！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;哎～好几次失败弄的我全无乐趣！是时候暂停暂停了，哈哈哈！！！嗯～应该去哪里浪呢？？？这是个问题！！！&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="给自己" scheme="http://yoursite.com/tags/%E7%BB%99%E8%87%AA%E5%B7%B1/"/>
+    
+      <category term="坚持" scheme="http://yoursite.com/tags/%E5%9D%9A%E6%8C%81/"/>
+    
+      <category term="走下去" scheme="http://yoursite.com/tags/%E8%B5%B0%E4%B8%8B%E5%8E%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>78 款 Markdown 工具</title>
+    <link href="http://yoursite.com/2016/11/15/postName-5/"/>
+    <id>http://yoursite.com/2016/11/15/postName-5/</id>
+    <published>2016-11-14T16:00:00.000Z</published>
+    <updated>2016-11-14T20:27:17.411Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<p><a href="http://whatismarkdown.com/" target="_blank" rel="external">Markdown</a> 是一种易写易读的文本标记语言。本文介绍了编写、查看 Markdown 的78种工具，涵盖桌面端、移动端和 web 端。<a id="more"></a></p>
+<p>1.<br><a href="http://markable.in/" target="_blank" rel="external">Markable</a><br>强大的在线 Markdown 编辑器，支持语法高亮、自动缩进、高亮所在行、显示行数、即时预览。它支持将 HTML 转换成 Markdown。 可以配合 <a href="http://mashable.com/category/evernote/" target="_blank" rel="external">Evernote</a> 、<a href="http://mashable.com/category/dropbox/" target="_blank" rel="external">Dropbox</a> 使用。</p>
+<p>2.<br><a href="http://markdown-here.com/" target="_blank" rel="external">Markdown Here</a><br>使用 Markdown 撰写邮件。可以插入表格、代码片段和数学公式。支持 Chrome、Firefox、Safari 和 Thunderbird。</p>
+<p>3.<br><a href="http://multimarkdown.com/" target="_blank" rel="external">MultiMarkdown Composer</a><br>Mac OS X 下的 Markdown 编辑器，支持 <a href="http://fletcherpenney.net/multimarkdown/" target="_blank" rel="external">MultiMarkdown Syntax</a> 语法。</p>
+<p>4.<br><a href="http://www.tryscribble.com/" target="_blank" rel="external">Scribble</a><br>使用 Markdown 创建简单的 wiki 页面。</p>
+<p>5.<br><a href="http://markedapp.com/" target="_blank" rel="external">Marked App</a><br>Mac OS X 下的 Markdown 编辑器。支持 MultiMarkdown 语法。可以定制 CSS 及 预处理器。</p>
+<p>6.<br><a href="http://writemonkey.com/index.php" target="_blank" rel="external">Write Monkey</a><br>Windows 下的 Markdown 编辑器。轻量、快速，极度简洁的界面帮助你将注意力集中在撰写上。</p>
+<p>7.<br><a href="http://www.iawriter.com/mac/" target="_blank" rel="external">iA Writer</a><br>Mac OS X 下的 Markdown 编辑器。 Microsoft Word 2007 .docx 互转。iCloud、Dropbox 同步。聚焦模式（聚焦当前行）。</p>
+<p>8.<br><a href="http://mouapp.com/" target="_blank" rel="external">Mou</a><br>Mac OS X 下的 Markdown 编辑器。方便的action，增强的 CJK 支持，文字竖排显示，定制主题和 CSS，自动补全，发布到 Scriptogr.am 和 Tumblr。</p>
+<p>9.<br><a href="http://daringfireball.net/projects/markdown/dingus" target="_blank" rel="external">Markdown Dingus</a><br>在线转换 Markdown 为 HTML。</p>
+<p>10.<br><a href="http://bywordapp.com/" target="_blank" rel="external">Byword</a><br>Mac OS X 下的 Markdown 编辑器。支持输出为 HTML、PDF、RTX，以及直接发布到 web 平台。同时支持键盘快捷键、字数统计和在线更新。</p>
+<p>11.<br><a href="http://oscargodson.github.io/EpicEditor/" target="_blank" rel="external">EpicEditor</a><br>JavaScript Markdown 编辑器，可嵌入网站使用。支持全屏编辑、即时预览、自动保存草稿、离线使用。</p>
+<p>12.<br><a href="http://www.markdownpro.com/" target="_blank" rel="external">Markdown Pro</a><br>Mac OS X 下的 Markdown 编辑器。支持自定义模板、版本回退。</p>
+<p>13.<br><a href="http://markdownpad.com/" target="_blank" rel="external">MarkdownPad</a><br>Windows 下的 Markdown 编辑器。支持自定义 CSS。支持多种 Markdown 格式，包括 Markdown Extra 和 GitHub Flavored Markdown。</p>
+<p>14.<br><a href="http://www.tensionsoftware.com/osx/easymarkdown/" target="_blank" rel="external">Easy Markdown</a><br>适用于 Mac OS X。通过 Markdown 编写 HTML，强大的智能提示。</p>
+<p>15.<br><a href="https://chrome.google.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa#detail/markdown-here/" target="_blank" rel="external">Markdown Here</a><br>Google Chrome 插件，让你可以使用 Markdown 撰写邮件。支持语法高亮和 Github-flavored Markdown。</p>
+<p>16.<br><a href="http://dillinger.io/" target="_blank" rel="external">Dillinger</a><br>在线的 HTML 5 Markdown 编辑器，即时预览，集成 Dropbox 和 Github。</p>
+<p>17.<br><a href="http://lab.lepture.com/editor/" target="_blank" rel="external">Editor</a><br>简单的 Markdown 编辑器组件，你可以将其集成在你的网站中。</p>
+<p>18.<br><a href="http://www.codingrobots.com/markdownnote/" target="_blank" rel="external">Markdown Note</a><br>Mac OS X、iOS 下的日记软件。使用 Markdown 撰写日记，支持同步到 Dropbox。</p>
+<p>19.<br><a href="http://jrmoran.com/playground/markdown-live-editor/" target="_blank" rel="external">Markdown Live Editor</a><br>基于 <a href="https://github.com/innocead/wmd" target="_blank" rel="external">WMD</a> 和其他开源工具构建的 Markdown 编辑器。</p>
+<p>20.<br><a href="http://joncom.be/experiments/markdown-editor/edit/" target="_blank" rel="external">Markdown Editor</a><br>简单的在线 Markdown 编辑器。</p>
+<p>21.<br><a href="http://www.ctrlshift.net/project/markdowneditor/" target="_blank" rel="external">Onlime Markdown Editor</a><br>另一个在线 Markdown 编辑器。</p>
+<p>22.<br><a href="http://sourceforge.net/p/retext/home/ReText/" target="_blank" rel="external">ReText</a><br>基于 Python 和 QT 打造的编辑器。支持 Markdown 和 reStructuredText。支持上传到 Google Docs。</p>
+<p>23.<br><a href="http://segmentfault.com/a/1190000000451354" target="_blank" rel="external">Wri.pe</a><br>简单优雅的开源在线笔记服务，支持 Markdown。</p>
+<p>24.<br><a href="http://www.sublimetext.com/" target="_blank" rel="external">Sublime Text</a><br>大名鼎鼎的编辑器。有大量的 Markdown 插件可用。</p>
+<p>25.<br><a href="http://www.red-sweater.com/marsedit/" target="_blank" rel="external">MarsEdit</a><br>Mac OS X 下的博客撰写和发布工具，支持 Markdown。</p>
+<p>26.<br><a href="http://www.literatureandlatte.com/scrivener.php" target="_blank" rel="external">Scrivener</a><br>内容创作编辑工具。支持 Windows 8.1 和 Mac OS X 10.9。支持 Markdown 和 MultiMarkdown 语法。</p>
+<p>27.<br><a href="http://blogeasyapp.com/blog/" target="_blank" rel="external">BlogEasy</a><br>Mac OS X 和 iOS 下的 Wordpress 客户端，支持 Markdown。</p>
+<p>28.<br><a href="http://www.notebooksapp.com/mac/" target="_blank" rel="external">Notebooks for Mac</a><br>Mac OS X 下的笔记应用。支持 Markdown。</p>
+<p>29.<br><a href="http://www.barebones.com/products/textwrangler/" target="_blank" rel="external">Text Wrangler</a><br>Mac OS X 下的 HTML 和文本编辑器，原生支持 Markdown。</p>
+<p>30.<br><a href="http://www.texts.io/" target="_blank" rel="external">Texts</a><br>跨平台的 Markdown 编辑器。支持转换为 PDF、HTML、Word、ePub 等格式。</p>
+<p>31.<br><a href="http://macromates.com/" target="_blank" rel="external">TextMate</a><br>Mac OS X 下久负盛名的编辑器。使用 <a href="https://github.com/textmate/markdown.tmbundle" target="_blank" rel="external">Markdown Bundle</a> 可以为其添加 Markdown 支持。</p>
+<p>32.<br><a href="http://getmacchiato.com/" target="_blank" rel="external">Macchiato</a><br>Mac OS X 下的 Markdown 编辑器。支持自动保存、版本历史和全屏模式。</p>
+<p>33.<br><a href="https://draftin.com/" target="_blank" rel="external">Draft</a><br>支持 Markdown 的协同协作工具，内置版本系统。支持 GitHub 的 Markdown todo 格式。</p>
+<p>34.<br><a href="http://www.inkcode.net/qute" target="_blank" rel="external">Qute</a><br>跨平台文本编辑器。支持 Markdown 和 Tex。提供基于段落的预览和极简的界面。</p>
+<p>35.<br><a href="http://johnmacfarlane.net/pandoc/" target="_blank" rel="external">Pandoc</a><br>基于 Haskel 编写。可以在多种文档格式间转换。支持 Markdown。除了标准 Markdown 模式之外，Pandoc 还有一个扩展模式，增加了表格、脚注等语法。</p>
+<p>36.<br><a href="http://clickontyler.com/nottingham/" target="_blank" rel="external">Nottingham</a><br>Mac OS X 下的笔记应用。支持 Markdown，可以和 Simplenote、Dropbox 同步。</p>
+<p>37.<br><a href="http://loremipsumapp.com/" target="_blank" rel="external">Loremlpsum</a><br>Mac OS X 下的 Markdown 编辑器。支持 iCloud、版本历史、书签。</p>
+<p>38.<br><a href="http://cutefreeapp.com/" target="_blank" rel="external">Free</a><br>Mac OS X 下的 Markdown 编辑器，支持聚焦当前段落。</p>
+<p>39.<br><a href="http://cognitivebits.com/clean-writer-pro.html" target="_blank" rel="external">Clean Writer Pro</a><br>Mac OS X 下的文本编辑器。支持 Markdown，聚焦当前段落。</p>
+<p>40.<br><a href="http://segmentfault.com/a/1190000000487062" target="_blank" rel="external">Markdown.css</a><br>有趣的 CSS 样式表。将 HTML 显示成 Markdown 形式。</p>
+<p>41.<br><a href="http://serpensoft.com/writedown/index.html" target="_blank" rel="external">Writedown</a><br>Mac OS X 下的文本编辑器。支持 Markdown。</p>
+<p>42.<br><a href="http://support.apple.com/kb/ht2523" target="_blank" rel="external">TextEdit</a><br>Mac OS X 自带的文本编辑器。可以用于编写 Markdown 文件，以及预览 Markdown 生成的 HTML。</p>
+<p>43.<br><a href="http://wordpress.org/plugins/markdown-on-save/" target="_blank" rel="external">Markdown On Save</a><br>Wordpress 插件，允许你使用 Markdown 撰写博客。</p>
+<p>44.<br><a href="http://www.peterborgapps.com/smultron/" target="_blank" rel="external">Smultron</a><br>Mac OS X 下优雅、强大的编辑器。支持 预览 Markdown 文档。</p>
+<p>45.<br><a href="http://hallojs.org/demo/markdown/" target="_blank" rel="external">Hallo</a><br>Markdown 的文本编辑器组件，可嵌入你的网站。基于 jQuery UI 及 HTML5 <code>contentEditable</code>特性打造。</p>
+<p>46.<br><a href="https://github.com/slhck/online-markdown-editor" target="_blank" rel="external">Online Markdown Editor</a><br>在线 Markdown 编辑器，基于 WMD 和 jQuery 打造。</p>
+<p>47.<br><a href="http://jrham.es/instantmark/" target="_blank" rel="external">Instant Mark</a><br>基于 HTML 5 的 Markdown 在线编辑器。支持以拖拽 CSS 文件的方式自定义样式。</p>
+<p>48.<br><a href="http://brettterpstra.com/projects/nvalt/" target="_blank" rel="external">nvALT2</a><br>Mac OS X 下的笔记应用，飞快、高效。支持 MultiMarkdown。</p>
+<p>49.<br><a href="http://markitup.jaysalvat.com/home/" target="_blank" rel="external">Mark It Up</a><br>JavaScript 插件，允许你将任何文本框转化成编辑器。支持 Markdown、HTML、Textile、Wiki Syntax 和 BBcode。你甚至可以实现自己的标记语言。</p>
+<p>50.<br><a href="http://savagelook.com/blog/actionscript3/gonzo-an-open-source-markdown-editor" target="_blank" rel="external">Gonzo</a><br>基于 Flex 4 和 AS3 打造的开源 Markdown 编辑器。</p>
+<p>51.<br><a href="http://www.barebones.com/products/bbedit/index.html" target="_blank" rel="external">BBEdit</a><br>Mac OS X 下流行的编辑器。支持 Markdown。</p>
+<p>52.<br><a href="http://www.ulyssesapp.com/" target="_blank" rel="external">Ulysses III</a><br>Mac OS X 下的写作工具。支持 Markdown，iCloud同步。</p>
+<p>53.<br><a href="http://markdownlife.com/" target="_blank" rel="external">Markdown Lite</a><br>Markdown 编辑器，支持版本历史、智能补全、主题模板。</p>
+<p>54.<br><a href="http://www.2storks.com/denote" target="_blank" rel="external">Denote</a><br>Android 下的 Markdown 编辑器，支持 Dropbox 同步。</p>
+<p>55.<br><a href="http://notesy-app.com/" target="_blank" rel="external">Notesy</a><br>iOS 下的笔记软件。支持 Dropbox 同步。完整支持 Markdown，针对 Makrdown 的键盘快捷键。</p>
+<p>56.<br><a href="http://backpager.amasan.co.uk/" target="_blank" rel="external">Backpager</a><br>在线 Markdown 编辑器。基于 <a href="http://softwaremaniacs.org/playground/showdown-highlight/" target="_blank" rel="external">Showdown Highlight</a> 。</p>
+<p>57.<br><a href="http://www.wisd.com/nocs/" target="_blank" rel="external">Nocs</a><br>iOS 笔记应用。支持 Markdown 和 Dropbox。</p>
+<p>58.<br><a href="http://www.xelaton.com/index.php?section=markmywords&amp;lang=en" target="_blank" rel="external">MarkMyWords</a><br>跨平台文本编辑器，面向前端开发者。支持 Markdown。</p>
+<p>59.<br><a href="https://play.google.com/store/apps/details?id=com.clockworkengine.android.LightPaper" target="_blank" rel="external">LightPaper</a><br>Android 文本编辑器。支持 Markdown 和 MultiMarkdown。支持同步到 Dropbox。</p>
+<p>60.<br><a href="https://play.google.com/store/apps/details?id=com.mvilla.draft" target="_blank" rel="external">Draft</a><br>Android 下的笔记编辑软件。支持 Markdown 和 MultiMarkdown。支持同步到 Dropbox。面向 Markdown 的键盘快捷键。</p>
+<p>61.<br><a href="http://simplenote.com/" target="_blank" rel="external">Simplenote</a><br>基于文本的笔记应用。支持 iOS、Android、Mac。支持 Markdown。</p>
+<p>62.<br><a href="https://play.google.com/store/apps/details?id=net.keepzero.markdrop" target="_blank" rel="external">MarkDrop</a><br>Android 下的 Markdown 编辑器，支持 Dropbox 同步。</p>
+<p>63.<br><a href="http://nebulousapps.net/" target="_blank" rel="external">Nebulous Notes</a><br>iOS 下的文本编辑器。支持 Markdwon 和 Dropbox 同步。</p>
+<p>64.<br><a href="http://www.secondgearsoftware.com/elements/" target="_blank" rel="external">Elements</a><br>iOS 下的文本编辑器。支持 Markdown 和 MultiMarkdown。支持同步到 Dropbox。</p>
+<p>65.<br><a href="https://play.google.com/store/apps/details?id=com.jamesmc.writer&amp;hl=en" target="_blank" rel="external">Writer</a><br>Android 文本编辑器，支持 Markdown。</p>
+<p>66.<br><a href="http://www.textasticapp.com/" target="_blank" rel="external">Textastic</a><br>支持 iOS、Mac OS X 的编辑器。支持 Markdown。</p>
+<p>67.<br><a href="https://chrome.google.com/webstore/detail/markdown-preview/jmchmkecamhbiokiopfpnfgbidieafmd#detail/markdown-preview/" target="_blank" rel="external">Markdown Preview</a><br>Google Chrome 插件，预览 Markdown 文件。</p>
+<p>68.<br><a href="http://getwritingkit.com/" target="_blank" rel="external">Writing Kit</a><br>iOS Markdown 文本编辑器。支持 Dropbox。</p>
+<p>69.<br><a href="http://heckyesmarkdown.com/" target="_blank" rel="external">Heck Yes Markdown</a><br>转换网页到 Markdown 的在线工具。输入网页 URL 即可将其转换为 Markdown。</p>
+<p>70.<br><a href="http://segmentfault.com/a/1190000000500211" target="_blank" rel="external">Strapdown.js</a><br>在静态 HTML 文件中使用 标签包裹 Markdown 标记的文本，strapdown.js 会将其转换为 HTML。支持 Github-flavored Markdown 和 主流浏览器，可以定制主题。</p>
+<p>71.<br><a href="https://chrome.google.com/webstore/detail/textdown/efalomlklhakojjbdfehfkgoicablooc#detail/textdown/efalomlklhakojjbdfehfkgoicablooc" target="_blank" rel="external">Textdown</a><br>基于 Google Chrome 应用打造的Markdown 编辑器。</p>
+<p>72.<br><a href="http://chocolatapp.com/" target="_blank" rel="external">Chocolat</a><br>Mac OS X 文本编辑器，支持 Markdown。支持分割窗口、语法高亮、自动补全、多光标编辑、实时预览。</p>
+<p>73.<br><a href="http://segmentfault.com/a/1190000000504738" target="_blank" rel="external">Hashify</a><br>乍一看只是一个平平无奇的 Markdow 编辑器，其实相当奇葩。它的每个文档的 URL 包含了页面的完整内容。编辑的同时，URL会随之变化。</p>
+<p>74.<br><a href="http://markdownlivepreview.com/" target="_blank" rel="external">Markdown Live Preview</a><br>基于 <a href="https://github.com/evilstreak/markdown-js" target="_blank" rel="external">Markdown.js</a> 的在线 Markdown 编辑器。</p>
+<p>75.<br><a href="http://segmentfault.com/a/1190000000489917" target="_blank" rel="external">Dropplets</a><br>开源 Markdown 博客平台。你可以使用任何编辑器编辑 Markdown 文档，然后通过拖放文件的方式发布博客。</p>
+<p>76.<br><a href="http://www.markdownviewer.com/" target="_blank" rel="external">Markdown Viewer</a><br>基于 Bootstrap 和 Markdown.js 的在线 Markdown 编辑器。</p>
+<p>77.<br><a href="http://www.markdown.io/" target="_blank" rel="external">Markdown.io</a><br>帮助你使用 Markdown 创建网站、wiki 和博客的在线应用。将 Markdown 文件上传到 Dropbox 之类的公开网盘，然后使用 Markdown.io 生成网页。</p>
+<p>78.<br><a href="http://www.tomwitkin.com/poster/" target="_blank" rel="external">Poster</a><br>iOS 下易用的博客编辑器，支持 Markdown。可以同步到 Dropbox 和 Wordpress。</p>
+<hr>
+<blockquote>
+<p>原文 <a href="http://mashable.com/2013/06/24/markdown-tools/" target="_blank" rel="external">78 Tools for Writing and Previewing Markdown</a> </p>
+<p>编译 <a href="http://sf.gg" target="_blank" rel="external">SegmentFault</a> </p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;http://whatismarkdown.com/&quot;&gt;Markdown&lt;/a&gt; 是一种易写易读的文本标记语言。本文介绍了编写、查看 Markdown 的78种工具，涵盖桌面端、移动端和 web 端。
+    
+    </summary>
+    
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+    
+      <category term="写作" scheme="http://yoursite.com/tags/%E5%86%99%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown 新手指南</title>
     <link href="http://yoursite.com/2016/11/10/postName-2/"/>
     <id>http://yoursite.com/2016/11/10/postName-2/</id>
     <published>2016-11-09T16:00:00.000Z</published>
-    <updated>2016-11-10T03:46:45.465Z</updated>
+    <updated>2016-11-14T20:29:41.599Z</updated>
     
     <content type="html"><![CDATA[<hr>
-<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><h3 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h3><p><strong>Markdown</strong>是一种极简的标记语言，可以轻易的将文本转化为HTML。语法非常容易学习，简单到每个人都可以在5分钟之内学会。Markdown之所以越来越流行，不是因为它复杂，而是因为他足够简单。<br><a id="more"></a></p>
+<h3 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h3><p><strong>Markdown</strong>是一种极简的标记语言，可以轻易的将文本转化为HTML。语法非常容易学习，简单到每个人都可以在5分钟之内学会。Markdown之所以越来越流行，不是因为它复杂，而是因为他足够简单。<br><a id="more"></a></p>
 <h3 id="Markdown优点"><a href="#Markdown优点" class="headerlink" title="Markdown优点"></a>Markdown优点</h3><ul>
 <li>纯文本编写，兼容性很强，可以使用所有文本编辑器打开</li>
 <li>让写作者专注与文字而不是排版</li>
@@ -98,7 +236,7 @@
     <summary type="html">
     
       &lt;hr&gt;
-&lt;h2 id=&quot;Markdown简介&quot;&gt;&lt;a href=&quot;#Markdown简介&quot; class=&quot;headerlink&quot; title=&quot;Markdown简介&quot;&gt;&lt;/a&gt;Markdown简介&lt;/h2&gt;&lt;h3 id=&quot;Markdown是什么&quot;&gt;&lt;a href=&quot;#Markdown是什么&quot; class=&quot;headerlink&quot; title=&quot;Markdown是什么&quot;&gt;&lt;/a&gt;Markdown是什么&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt;是一种极简的标记语言，可以轻易的将文本转化为HTML。语法非常容易学习，简单到每个人都可以在5分钟之内学会。Markdown之所以越来越流行，不是因为它复杂，而是因为他足够简单。&lt;br&gt;
+&lt;h3 id=&quot;Markdown是什么&quot;&gt;&lt;a href=&quot;#Markdown是什么&quot; class=&quot;headerlink&quot; title=&quot;Markdown是什么&quot;&gt;&lt;/a&gt;Markdown是什么&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt;是一种极简的标记语言，可以轻易的将文本转化为HTML。语法非常容易学习，简单到每个人都可以在5分钟之内学会。Markdown之所以越来越流行，不是因为它复杂，而是因为他足够简单。&lt;br&gt;
     
     </summary>
     
@@ -202,7 +340,7 @@
     <link href="http://yoursite.com/2016/11/09/postName-1/"/>
     <id>http://yoursite.com/2016/11/09/postName-1/</id>
     <published>2016-11-08T16:00:00.000Z</published>
-    <updated>2016-11-10T03:48:59.586Z</updated>
+    <updated>2016-11-10T09:26:07.356Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p>Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。<a id="more"></a></p>
@@ -378,9 +516,9 @@
     <link href="http://yoursite.com/2016/11/04/hello-world/"/>
     <id>http://yoursite.com/2016/11/04/hello-world/</id>
     <published>2016-11-03T20:55:20.306Z</published>
-    <updated>2016-11-05T21:22:09.158Z</updated>
+    <updated>2016-11-14T20:29:12.495Z</updated>
     
-    <content type="html"><![CDATA[<p>欢迎来到 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! 这是你的第一篇文章。 点击 <a href="https://hexo.io/docs/" target="_blank" rel="external">这里</a> 获得更多帮助。 如果您在使用Hexo碰到困难，你可以到这里 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">排除故障</a> 或者你可以去我的 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+    <content type="html"><![CDATA[<p>欢迎来到 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! 这是你的第一篇文章。 点击 <a href="https://hexo.io/docs/" target="_blank" rel="external">这里</a> 获得更多帮助。 如果您在使用Hexo碰到困难，你可以到这里 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">排除故障</a> 或者你可以去我的 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
 <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="编写一个新文档"><a href="#编写一个新文档" class="headerlink" title="编写一个新文档"></a>编写一个新文档</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">编写</a></p>
 <h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
@@ -393,7 +531,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;欢迎来到 &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! 这是你的第一篇文章。 点击 &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; re
+      &lt;p&gt;欢迎来到 &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! 这是你的第一篇文章。 点击 &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;这里&lt;/a&gt; 获得更多帮助。 如果您在使用Hexo碰到困难，你可以到这里 &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;排除故障&lt;/a&gt; 或者你可以去我的 &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;
     
     </summary>
     
