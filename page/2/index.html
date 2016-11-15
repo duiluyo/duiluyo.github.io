@@ -22,7 +22,7 @@
         
     </title>
 
-    <link rel="canonical" href="http://duiluyo.github.io/tags/android/">
+    <link rel="canonical" href="http://duiluyo.github.io/page/2/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -43,8 +43,8 @@
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="" class="animated fadeIn">
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="true
-" data-ishome = "false" >
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
+" data-ishome = "true" >
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -125,6 +125,126 @@
 <!-- Main Content -->
 
 
+<style>
+
+    .custom-haojen-container .post-preview:nth-of-type(1),
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) {
+        text-align: center;
+        background-repeat: no-repeat;
+        border-radius: 3px;
+        background-size: cover;
+        padding: 0;
+        height: 300px;
+        display: table;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+
+    /*去掉诗歌的背景图片*/
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) {
+        background-image: none !important;
+        background-color: rgba(255, 248, 220, 0.5);
+    }
+
+    .custom-haojen-container .post-preview:nth-child(1) h2,
+    .custom-haojen-container .post-preview:nth-child(1) .post-meta,
+    .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+        text-shadow: 0 0 40px rgba(0, 0, 0, 1);
+        letter-spacing: 1px;
+        color: #fff;
+        margin-top: 0;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .custom-haojen-container .post-preview:nth-child(1) .post-meta {
+        font-size: .9em;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    .custom-haojen-container .post-preview-poetry:nth-child(1) .post-subtitle {
+        letter-spacing: 6px;
+        font-size: 18px;
+        font-family: unset;
+        font-weight: 400;
+        color: rgba(0, 0, 0, .75)
+    }
+
+    /*不显示摘要*/
+    .custom-haojen-container .post-preview:nth-child(1) .post-content-preview {
+        display: none
+    }
+
+    /*只第一个显示背景图片*/
+    .custom-haojen-container .post-preview:not(:nth-child(1)) {
+        background-image: none !important;
+    }
+
+    /*第一个分界线去掉*/
+    .custom-haojen-container hr:nth-of-type(1) {
+        display: none;
+    }
+
+    /*主题*/
+    .custom-haojen-container .post-preview:nth-of-type(1) > a {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    /*诗词标题*/
+    .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+        font-size: 35px;
+        font-family: STKaiti;
+        color: rgba(0, 0, 0, .8);
+    }
+
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) .post-meta {
+        color: #0e2231;
+    }
+
+    @media (max-width: 768px) {
+        .custom-haojen-container .post-preview:nth-child(1) {
+            height: 240px;
+        }
+
+        .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+            font-size: 28px !important;
+            margin-top: 0;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .custom-haojen-container .post-preview:nth-of-type(1) > a {
+            padding: 20px
+        }
+    }
+
+    /*手机屏幕*/
+    @media (max-width: 400px) {
+        .custom-haojen-container .post-preview:nth-child(1) {
+            height: 195px;
+        }
+
+        .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+            font-size: 20px !important;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+            font-size: 16px;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) a {
+            padding: 30px 20px;
+        }
+    }
+</style>
+
 <!-- Page Header -->
 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 visible-xs-block visible-sm-block">
     <div class="row">
@@ -153,20 +273,21 @@
 
 <div class="post-preview "
      style="background-image: url('http://ogni2ad79.bkt.clouddn.com/IMG_20160525_154623~01.jpg')">
-    <a href="/2016/11/16/postName-6/">
+    <a href="/2016/11/04/hello-world/">
         <h2 class="post-title">
-            可能对安卓最无情的嘲讽，就是所谓“绿色联盟”了吧?。。。
+            你好，世界
         </h2>
         <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-11-16
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-11-04
         </p>
         
         <div class="post-content-preview">
             <p>
-                成也开放败也开放今天下午，华为开了 Mate 9 的中国发布会。
-华为的手机一直都还算不错，这次的 Mate 9 看起来也很有料，但是对路这次最关心的不是手机，而是。。。
-华为在发布会上宣传安卓绿色联盟（难道不该叫超级至尊全家桶联盟？）
-对路一看到百度、阿里、腾讯三个词，不由得虎躯一震，这仨厂还..
+                欢迎来到 Hexo! 这是你的第一篇文章。 点击 这里 获得更多帮助。 如果您在使用Hexo碰到困难，你可以到这里 排除故障 或者你可以去我的 GitHub.
+快速开始编写一个新文档1$ hexo new "My New Post"
+更多信息: 编写
+运行服务器1$ hexo server
+更多..
             </p>
         </div>
     </a>
@@ -181,6 +302,10 @@
 <!-- 翻页 pager -->
 
 <ul class="pager">
+    
+    <li class="previous">
+        <a href="/">&larr; Newer Posts</a>
+    </li>
     
     
 </ul>
