@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://duiluyo.github.io/"/>
-  <updated>2016-11-15T16:12:02.471Z</updated>
+  <updated>2016-11-15T16:57:20.486Z</updated>
   <id>http://duiluyo.github.io/</id>
   
   <author>
@@ -14,6 +14,83 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Freepbx-VPS搭建SIP服务器实现VOIP通话</title>
+    <link href="http://duiluyo.github.io/2016/11/17/postName-7/"/>
+    <id>http://duiluyo.github.io/2016/11/17/postName-7/</id>
+    <published>2016-11-16T16:00:00.000Z</published>
+    <updated>2016-11-15T16:57:20.486Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Freepbx是一个集成了Asterisk的工具，提供GUI (graphical user interface)用户图形界面。通过Freepbx可以十分方便的配置各类电话系统。由于Asterisk 包含广泛的 VoIP 协议诸如：SIP, IAX2 和 H.323 等等，所以安装了Freepbx之后，我们便可以通过Web页面，搭建属于自己的网络语音系统。</p>
+<h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><p>通过将Freepbx安装和配置在VPS中，由VPS为我们提供24小时在线的SIP服务器。我们可以通过SIP网关+普通话机、SIP软电话，利用预设的用户名和密码登陆到服务器中，进行账户之间的语音电话拨打。由于通话过程中的语音数据都是通过我们VPS来传递的。所以并不会产生额外的费用。但是如果需要将我们搭建的服务器拨通落地电话（固定电话、手机），则需要在Freebpx中配置相应的落地电话供应商。当然这也是需要额外付费的。</p>
+<h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><p>Freepbx 和 Asterisk 集成在一个ISO镜像中，所以将利用可以挂载ISO的VPS，将整个镜像安装在VPS中。</p>
+<p>本教程使用 <a href="http://www.vultr.com/?ref=6890622" target="_blank" rel="external">Vultr（提供最低5美元/月 日本、美国等地VPS）</a>为演示.</p>
+<hr>
+<h2 id="一、系统挂载和创建VPS"><a href="#一、系统挂载和创建VPS" class="headerlink" title="一、系统挂载和创建VPS"></a>一、系统挂载和创建VPS</h2><p>1.登陆到Vultr的管理后台，并点击”My Server”-“ISOs”</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-1.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-1.png" alt="20160112-1"></a></p>
+<p>2.在Remote中填入Freepbx官网提供的ISO镜像连接，然后点击”Upload”。Vultr将会把此镜像下载到服务器上为我们下一步安装做好镜像的准备。</p>
+<blockquote>
+<p>官方镜像地址： <a href="http://downloads.freepbxdistro.org/ISO/FreePBX-64bit-6.12.65.iso*" target="_blank" rel="external">http://downloads.freepbxdistro.org/ISO/FreePBX-64bit-6.12.65.iso*</a></p>
+</blockquote>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-2.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-2.png" alt="20160112-2"></a></p>
+<p>3.在”Deploy”选项卡中创建一个VPS实例，您可以选择自己喜欢的配置，最低配为5美元/月。并且在自定义镜像中选择我们上一步上传的Freepbx镜像。点击”Place Oder”开始创建VPS。</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-3.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-3.png" alt="20160112-3"></a></p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-4.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-4.png" alt="20160112-4"></a></p>
+<h2 id="二、在VPS中安装Freepbx系统"><a href="#二、在VPS中安装Freepbx系统" class="headerlink" title="二、在VPS中安装Freepbx系统"></a>二、在VPS中安装Freepbx系统</h2><p>1.待创建成功后，进入到VPS管理界面，点击”View Console”进入控制台，即可看到Freepbx 的初始安装界面，我们选择 “Full install– No RAID”，即可键入系统安装过程。</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-5.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-5.png" alt="20160112-5"></a></p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-6.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-6.png" alt="20160112-6"></a></p>
+<p>2.网络配置界面中，我们保持默认配置不变，通过键盘的”Tab”键调节到”OK”按钮，并按空格键以继续。</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-7.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-7.png" alt="20160112-7"></a></p>
+<p>3.选择您所在的时区，并通过键盘的”Tab”键调节到”OK”按钮，并按空格键以继续。</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-9.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-9.png" alt="20160112-9"></a></p>
+<p>4.设置root密码，并通过键盘的”Tab”键调节到”OK”按钮，并按空格键以继续。视VPS性能，此过程需要大概10分钟的时间安装完毕。<br><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-10.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-10.png" alt="20160112-10"></a></p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-11.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-11.png" alt="20160112-11"></a></p>
+<p>5.安装完毕后，则会回到1.步骤中的页面，此时我们需要在VPS控制台中，先移除ISO挂载，再重启VPS.</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-12.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-12.png" alt="20160112-12"></a></p>
+<h2 id="三、配置Freepbx"><a href="#三、配置Freepbx" class="headerlink" title="三、配置Freepbx"></a>三、配置Freepbx</h2><p>经过上面移除ISO并且重启VPS之后，系统还需要10-15分钟加载相关模块。待完全加载成功后我们即可通过访问<a href="http://ip" target="_blank" rel="external">http://ip</a> 管理和配置  Freepbx 了。</p>
+<p>1.访问 ip 然后设定管理用户名和密码。</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-13.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-13.png" alt="20160112-13"></a></p>
+<p>2.然后选择 FreePBX Administration 登陆管理界面。</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-14.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-14.png" alt="20160112-14"></a></p>
+<p>3.初次登陆Freepbx系统需要设置相关信息。按步骤点击”Skip”–“Complete”–“Not now”。跳过各类激活和收费的设置。</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-15.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-15.png" alt="20160112-15"></a></p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-16.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-16.png" alt="20160112-16"></a></p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-17.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-17.png" alt="20160112-17"></a></p>
+<p>4.基本配置选择成功后，就可以看到Freepbx 的状态页面。包含各种组件的安装状况、系统负载、用户在线情况等。</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-18.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-18.png" alt="20160112-18"></a></p>
+<h1 id="四、添加sip用户"><a href="#四、添加sip用户" class="headerlink" title="四、添加sip用户"></a>四、添加sip用户</h1><p>1.选择”Applications”–“Extensions”</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-19.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-19.png" alt="20160112-19"></a></p>
+<p>2.点击”Submit”</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-20.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-20.png" alt="20160112-20"></a></p>
+<p>3.如图所示，输入用户ID和密码。其余项目请保持默认。</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-21.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-21.png" alt="20160112-21"></a></p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-22.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-22.png" alt="20160112-22"></a></p>
+<p>4.提交之后，即可在右侧看到已添加的用户信息，最后需要点击”Apply Config”使新添加的用户生效。</p>
+<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-23.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-23.png" alt="20160112-23"></a></p>
+<p>至此，sip账户已经添加完毕。我们可以利用服务器IP、用户名、密码在SIP软电话软件上登录。并可以拨打其他用户来实现免费的通话。更多高级设置，请参见Freepbx官方的wiki。</p>
+<h1 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h1><p>1.eyebeam</p>
+<p>Windows平台较为流行的一款SIP软电话软件。操作简便。</p>
+<p>2.Zoiper</p>
+<p>支持包括 Windwos、MAC、IOS、Android等各类平台的SIP软电话软件。<br><a href="http://www.izcv.com/tag/voip" target="_blank" rel="external">VOIP</a><br>原创文章转载请注明：转自热闹网：<a href="http://www.izcv.com/1310.html" target="_blank" rel="external">Freepbx-VPS搭建SIP服务器实现VOIP通话[图文教程]</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Freepbx是一个集成了Asterisk的工具，提供GUI (graphical user interface)用户图形界面。通过Free
+    
+    </summary>
+    
+    
+      <category term="VOIP" scheme="http://duiluyo.github.io/tags/VOIP/"/>
+    
+      <category term="VPS" scheme="http://duiluyo.github.io/tags/VPS/"/>
+    
+      <category term="Freepbx" scheme="http://duiluyo.github.io/tags/Freepbx/"/>
+    
+      <category term="通话" scheme="http://duiluyo.github.io/tags/%E9%80%9A%E8%AF%9D/"/>
+    
+  </entry>
   
   <entry>
     <title>可能对安卓最无情的嘲讽，就是所谓“绿色联盟”了吧?。。。</title>
@@ -131,83 +208,6 @@
       <category term="安卓" scheme="http://duiluyo.github.io/tags/%E5%AE%89%E5%8D%93/"/>
     
       <category term="android" scheme="http://duiluyo.github.io/tags/android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Freepbx-VPS搭建SIP服务器实现VOIP通话</title>
-    <link href="http://duiluyo.github.io/2016/11/16/postName-7/"/>
-    <id>http://duiluyo.github.io/2016/11/16/postName-7/</id>
-    <published>2016-11-15T16:00:00.000Z</published>
-    <updated>2016-11-15T16:55:42.694Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Freepbx是一个集成了Asterisk的工具，提供GUI (graphical user interface)用户图形界面。通过Freepbx可以十分方便的配置各类电话系统。由于Asterisk 包含广泛的 VoIP 协议诸如：SIP, IAX2 和 H.323 等等，所以安装了Freepbx之后，我们便可以通过Web页面，搭建属于自己的网络语音系统。</p>
-<h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><p>通过将Freepbx安装和配置在VPS中，由VPS为我们提供24小时在线的SIP服务器。我们可以通过SIP网关+普通话机、SIP软电话，利用预设的用户名和密码登陆到服务器中，进行账户之间的语音电话拨打。由于通话过程中的语音数据都是通过我们VPS来传递的。所以并不会产生额外的费用。但是如果需要将我们搭建的服务器拨通落地电话（固定电话、手机），则需要在Freebpx中配置相应的落地电话供应商。当然这也是需要额外付费的。</p>
-<h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><p>Freepbx 和 Asterisk 集成在一个ISO镜像中，所以将利用可以挂载ISO的VPS，将整个镜像安装在VPS中。</p>
-<p>本教程使用 <a href="http://www.vultr.com/?ref=6890622" target="_blank" rel="external">Vultr（提供最低5美元/月 日本、美国等地VPS）</a>为演示.</p>
-<hr>
-<h2 id="一、系统挂载和创建VPS"><a href="#一、系统挂载和创建VPS" class="headerlink" title="一、系统挂载和创建VPS"></a>一、系统挂载和创建VPS</h2><p>1.登陆到Vultr的管理后台，并点击”My Server”-“ISOs”</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-1.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-1.png" alt="20160112-1"></a></p>
-<p>2.在Remote中填入Freepbx官网提供的ISO镜像连接，然后点击”Upload”。Vultr将会把此镜像下载到服务器上为我们下一步安装做好镜像的准备。</p>
-<blockquote>
-<p>官方镜像地址： <a href="http://downloads.freepbxdistro.org/ISO/FreePBX-64bit-6.12.65.iso*" target="_blank" rel="external">http://downloads.freepbxdistro.org/ISO/FreePBX-64bit-6.12.65.iso*</a></p>
-</blockquote>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-2.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-2.png" alt="20160112-2"></a></p>
-<p>3.在”Deploy”选项卡中创建一个VPS实例，您可以选择自己喜欢的配置，最低配为5美元/月。并且在自定义镜像中选择我们上一步上传的Freepbx镜像。点击”Place Oder”开始创建VPS。</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-3.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-3.png" alt="20160112-3"></a></p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-4.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-4.png" alt="20160112-4"></a></p>
-<h2 id="二、在VPS中安装Freepbx系统"><a href="#二、在VPS中安装Freepbx系统" class="headerlink" title="二、在VPS中安装Freepbx系统"></a>二、在VPS中安装Freepbx系统</h2><p>1.待创建成功后，进入到VPS管理界面，点击”View Console”进入控制台，即可看到Freepbx 的初始安装界面，我们选择 “Full install– No RAID”，即可键入系统安装过程。</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-5.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-5.png" alt="20160112-5"></a></p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-6.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-6.png" alt="20160112-6"></a></p>
-<p>2.网络配置界面中，我们保持默认配置不变，通过键盘的”Tab”键调节到”OK”按钮，并按空格键以继续。</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-7.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-7.png" alt="20160112-7"></a></p>
-<p>3.选择您所在的时区，并通过键盘的”Tab”键调节到”OK”按钮，并按空格键以继续。</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-9.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-9.png" alt="20160112-9"></a></p>
-<p>4.设置root密码，并通过键盘的”Tab”键调节到”OK”按钮，并按空格键以继续。视VPS性能，此过程需要大概10分钟的时间安装完毕。<br><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-10.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-10.png" alt="20160112-10"></a></p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-11.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-11.png" alt="20160112-11"></a></p>
-<p>5.安装完毕后，则会回到1.步骤中的页面，此时我们需要在VPS控制台中，先移除ISO挂载，再重启VPS.</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-12.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-12.png" alt="20160112-12"></a></p>
-<h2 id="三、配置Freepbx"><a href="#三、配置Freepbx" class="headerlink" title="三、配置Freepbx"></a>三、配置Freepbx</h2><p>经过上面移除ISO并且重启VPS之后，系统还需要10-15分钟加载相关模块。待完全加载成功后我们即可通过访问<a href="http://ip" target="_blank" rel="external">http://ip</a> 管理和配置  Freepbx 了。</p>
-<p>1.访问 ip 然后设定管理用户名和密码。</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-13.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-13.png" alt="20160112-13"></a></p>
-<p>2.然后选择 FreePBX Administration 登陆管理界面。</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-14.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-14.png" alt="20160112-14"></a></p>
-<p>3.初次登陆Freepbx系统需要设置相关信息。按步骤点击”Skip”–“Complete”–“Not now”。跳过各类激活和收费的设置。</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-15.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-15.png" alt="20160112-15"></a></p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-16.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-16.png" alt="20160112-16"></a></p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-17.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-17.png" alt="20160112-17"></a></p>
-<p>4.基本配置选择成功后，就可以看到Freepbx 的状态页面。包含各种组件的安装状况、系统负载、用户在线情况等。</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-18.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-18.png" alt="20160112-18"></a></p>
-<h1 id="四、添加sip用户"><a href="#四、添加sip用户" class="headerlink" title="四、添加sip用户"></a>四、添加sip用户</h1><p>1.选择”Applications”–“Extensions”</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-19.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-19.png" alt="20160112-19"></a></p>
-<p>2.点击”Submit”</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-20.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-20.png" alt="20160112-20"></a></p>
-<p>3.如图所示，输入用户ID和密码。其余项目请保持默认。</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-21.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-21.png" alt="20160112-21"></a></p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-22.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-22.png" alt="20160112-22"></a></p>
-<p>4.提交之后，即可在右侧看到已添加的用户信息，最后需要点击”Apply Config”使新添加的用户生效。</p>
-<p><a href="http://static.izcv.com/wp-content/uploads/2016/01/20160112-23.png" target="_blank" rel="external"><img src="http://static.izcv.com/wp-content/uploads/2016/01/20160112-23.png" alt="20160112-23"></a></p>
-<p>至此，sip账户已经添加完毕。我们可以利用服务器IP、用户名、密码在SIP软电话软件上登录。并可以拨打其他用户来实现免费的通话。更多高级设置，请参见Freepbx官方的wiki。</p>
-<h1 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h1><p>1.eyebeam</p>
-<p>Windows平台较为流行的一款SIP软电话软件。操作简便。</p>
-<p>2.Zoiper</p>
-<p>支持包括 Windwos、MAC、IOS、Android等各类平台的SIP软电话软件。<br><a href="http://www.izcv.com/tag/voip" target="_blank" rel="external">VOIP</a><br>原创文章转载请注明：转自热闹网：<a href="http://www.izcv.com/1310.html" target="_blank" rel="external">Freepbx-VPS搭建SIP服务器实现VOIP通话[图文教程]</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Freepbx是一个集成了Asterisk的工具，提供GUI (graphical user interface)用户图形界面。通过Free
-    
-    </summary>
-    
-    
-      <category term="VOIP" scheme="http://duiluyo.github.io/tags/VOIP/"/>
-    
-      <category term="VPS" scheme="http://duiluyo.github.io/tags/VPS/"/>
-    
-      <category term="Freepbx" scheme="http://duiluyo.github.io/tags/Freepbx/"/>
-    
-      <category term="通话" scheme="http://duiluyo.github.io/tags/%E9%80%9A%E8%AF%9D/"/>
     
   </entry>
   
