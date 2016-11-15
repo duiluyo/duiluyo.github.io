@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>对路哟</title>
+  <title>duiluyo</title>
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2016-11-15T06:28:40.120Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://duiluyo.github.io/"/>
+  <updated>2016-11-15T12:06:01.472Z</updated>
+  <id>http://duiluyo.github.io/</id>
   
   <author>
     <name>对路哟</name>
-    
+    <email>duiluyoMa@gmail.com</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>可能对安卓最无情的嘲讽，就是所谓“?绿色联盟 ”了吧?。。。</title>
-    <link href="http://yoursite.com/2016/11/16/postName-6/"/>
-    <id>http://yoursite.com/2016/11/16/postName-6/</id>
+    <title>可能对安卓最无情的嘲讽，就是所谓“绿色联盟”了吧?。。。</title>
+    <link href="http://duiluyo.github.io/2016/11/16/postName-6/"/>
+    <id>http://duiluyo.github.io/2016/11/16/postName-6/</id>
     <published>2016-11-15T16:00:00.000Z</published>
-    <updated>2016-11-15T06:28:40.120Z</updated>
+    <updated>2016-11-15T12:06:01.472Z</updated>
     
     <content type="html"><![CDATA[<p><strong>成也开放</strong></p>
 <p><strong>败也开放</strong></p>
@@ -124,24 +124,24 @@
     </summary>
     
     
-      <category term="百度" scheme="http://yoursite.com/tags/%E7%99%BE%E5%BA%A6/"/>
+      <category term="百度" scheme="http://duiluyo.github.io/tags/%E7%99%BE%E5%BA%A6/"/>
     
-      <category term="阿里" scheme="http://yoursite.com/tags/%E9%98%BF%E9%87%8C/"/>
+      <category term="阿里" scheme="http://duiluyo.github.io/tags/%E9%98%BF%E9%87%8C/"/>
     
-      <category term="腾讯" scheme="http://yoursite.com/tags/%E8%85%BE%E8%AE%AF/"/>
+      <category term="腾讯" scheme="http://duiluyo.github.io/tags/%E8%85%BE%E8%AE%AF/"/>
     
-      <category term="google" scheme="http://yoursite.com/tags/google/"/>
+      <category term="google" scheme="http://duiluyo.github.io/tags/google/"/>
     
-      <category term="安卓" scheme="http://yoursite.com/tags/%E5%AE%89%E5%8D%93/"/>
+      <category term="安卓" scheme="http://duiluyo.github.io/tags/%E5%AE%89%E5%8D%93/"/>
     
-      <category term="android" scheme="http://yoursite.com/tags/android/"/>
+      <category term="android" scheme="http://duiluyo.github.io/tags/android/"/>
     
   </entry>
   
   <entry>
     <title>技能冷却哟～</title>
-    <link href="http://yoursite.com/2016/11/15/postName-4/"/>
-    <id>http://yoursite.com/2016/11/15/postName-4/</id>
+    <link href="http://duiluyo.github.io/2016/11/15/postName-4/"/>
+    <id>http://duiluyo.github.io/2016/11/15/postName-4/</id>
     <published>2016-11-14T16:00:00.000Z</published>
     <updated>2016-11-14T20:20:08.671Z</updated>
     
@@ -158,18 +158,18 @@
     </summary>
     
     
-      <category term="给自己" scheme="http://yoursite.com/tags/%E7%BB%99%E8%87%AA%E5%B7%B1/"/>
+      <category term="给自己" scheme="http://duiluyo.github.io/tags/%E7%BB%99%E8%87%AA%E5%B7%B1/"/>
     
-      <category term="坚持" scheme="http://yoursite.com/tags/%E5%9D%9A%E6%8C%81/"/>
+      <category term="坚持" scheme="http://duiluyo.github.io/tags/%E5%9D%9A%E6%8C%81/"/>
     
-      <category term="走下去" scheme="http://yoursite.com/tags/%E8%B5%B0%E4%B8%8B%E5%8E%BB/"/>
+      <category term="走下去" scheme="http://duiluyo.github.io/tags/%E8%B5%B0%E4%B8%8B%E5%8E%BB/"/>
     
   </entry>
   
   <entry>
     <title>78 款 Markdown 工具</title>
-    <link href="http://yoursite.com/2016/11/15/postName-5/"/>
-    <id>http://yoursite.com/2016/11/15/postName-5/</id>
+    <link href="http://duiluyo.github.io/2016/11/15/postName-5/"/>
+    <id>http://duiluyo.github.io/2016/11/15/postName-5/</id>
     <published>2016-11-14T16:00:00.000Z</published>
     <updated>2016-11-15T08:39:04.066Z</updated>
     
@@ -266,18 +266,18 @@
     </summary>
     
     
-      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://duiluyo.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://duiluyo.github.io/tags/Markdown/"/>
     
-      <category term="写作" scheme="http://yoursite.com/tags/%E5%86%99%E4%BD%9C/"/>
+      <category term="写作" scheme="http://duiluyo.github.io/tags/%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>Markdown 新手指南</title>
-    <link href="http://yoursite.com/2016/11/10/postName-2/"/>
-    <id>http://yoursite.com/2016/11/10/postName-2/</id>
+    <link href="http://duiluyo.github.io/2016/11/10/postName-2/"/>
+    <id>http://duiluyo.github.io/2016/11/10/postName-2/</id>
     <published>2016-11-09T16:00:00.000Z</published>
     <updated>2016-11-14T20:29:41.599Z</updated>
     
@@ -362,20 +362,20 @@
     </summary>
     
     
-      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://duiluyo.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://duiluyo.github.io/tags/Hexo/"/>
     
-      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://duiluyo.github.io/tags/Markdown/"/>
     
-      <category term="新手指南" scheme="http://yoursite.com/tags/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/"/>
+      <category term="新手指南" scheme="http://duiluyo.github.io/tags/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/"/>
     
   </entry>
   
   <entry>
     <title>云盘一个个倒下怎么办？无需编码，手把手教你搭建至尊私享云盘</title>
-    <link href="http://yoursite.com/2016/11/10/postName-3/"/>
-    <id>http://yoursite.com/2016/11/10/postName-3/</id>
+    <link href="http://duiluyo.github.io/2016/11/10/postName-3/"/>
+    <id>http://duiluyo.github.io/2016/11/10/postName-3/</id>
     <published>2016-11-09T16:00:00.000Z</published>
     <updated>2016-11-10T09:41:56.400Z</updated>
     
@@ -446,20 +446,20 @@
     </summary>
     
     
-      <category term="云盘" scheme="http://yoursite.com/tags/%E4%BA%91%E7%9B%98/"/>
+      <category term="云盘" scheme="http://duiluyo.github.io/tags/%E4%BA%91%E7%9B%98/"/>
     
-      <category term="ownCloud" scheme="http://yoursite.com/tags/ownCloud/"/>
+      <category term="ownCloud" scheme="http://duiluyo.github.io/tags/ownCloud/"/>
     
-      <category term="Cloud" scheme="http://yoursite.com/tags/Cloud/"/>
+      <category term="Cloud" scheme="http://duiluyo.github.io/tags/Cloud/"/>
     
-      <category term="私有云" scheme="http://yoursite.com/tags/%E7%A7%81%E6%9C%89%E4%BA%91/"/>
+      <category term="私有云" scheme="http://duiluyo.github.io/tags/%E7%A7%81%E6%9C%89%E4%BA%91/"/>
     
   </entry>
   
   <entry>
     <title>Xposed 框架的安装及使用流程（简单介绍）</title>
-    <link href="http://yoursite.com/2016/11/09/postName-1/"/>
-    <id>http://yoursite.com/2016/11/09/postName-1/</id>
+    <link href="http://duiluyo.github.io/2016/11/09/postName-1/"/>
+    <id>http://duiluyo.github.io/2016/11/09/postName-1/</id>
     <published>2016-11-08T16:00:00.000Z</published>
     <updated>2016-11-10T09:26:07.356Z</updated>
     
@@ -488,18 +488,18 @@
     </summary>
     
     
-      <category term="Xposed" scheme="http://yoursite.com/tags/Xposed/"/>
+      <category term="Xposed" scheme="http://duiluyo.github.io/tags/Xposed/"/>
     
-      <category term="Xposed 介绍" scheme="http://yoursite.com/tags/Xposed-%E4%BB%8B%E7%BB%8D/"/>
+      <category term="Xposed 介绍" scheme="http://duiluyo.github.io/tags/Xposed-%E4%BB%8B%E7%BB%8D/"/>
     
-      <category term="Xposed 框架" scheme="http://yoursite.com/tags/Xposed-%E6%A1%86%E6%9E%B6/"/>
+      <category term="Xposed 框架" scheme="http://duiluyo.github.io/tags/Xposed-%E6%A1%86%E6%9E%B6/"/>
     
   </entry>
   
   <entry>
     <title>使用GitHub和Hexo搭建免费静态Blog</title>
-    <link href="http://yoursite.com/2016/11/06/postName/"/>
-    <id>http://yoursite.com/2016/11/06/postName/</id>
+    <link href="http://duiluyo.github.io/2016/11/06/postName/"/>
+    <id>http://duiluyo.github.io/2016/11/06/postName/</id>
     <published>2016-11-05T23:56:27.000Z</published>
     <updated>2016-11-09T18:17:53.049Z</updated>
     
@@ -622,20 +622,20 @@
     </summary>
     
     
-      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://duiluyo.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://duiluyo.github.io/tags/Hexo/"/>
     
-      <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
+      <category term="GitHub" scheme="http://duiluyo.github.io/tags/GitHub/"/>
     
-      <category term="使用X" scheme="http://yoursite.com/tags/%E4%BD%BF%E7%94%A8X/"/>
+      <category term="使用X" scheme="http://duiluyo.github.io/tags/%E4%BD%BF%E7%94%A8X/"/>
     
   </entry>
   
   <entry>
     <title>你好，世界</title>
-    <link href="http://yoursite.com/2016/11/04/hello-world/"/>
-    <id>http://yoursite.com/2016/11/04/hello-world/</id>
+    <link href="http://duiluyo.github.io/2016/11/04/hello-world/"/>
+    <id>http://duiluyo.github.io/2016/11/04/hello-world/</id>
     <published>2016-11-03T20:55:20.306Z</published>
     <updated>2016-11-14T20:29:12.495Z</updated>
     
