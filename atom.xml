@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://duiluyo.github.io/"/>
-  <updated>2016-11-15T12:06:01.472Z</updated>
+  <updated>2016-11-15T16:12:02.471Z</updated>
   <id>http://duiluyo.github.io/</id>
   
   <author>
@@ -20,11 +20,9 @@
     <link href="http://duiluyo.github.io/2016/11/16/postName-6/"/>
     <id>http://duiluyo.github.io/2016/11/16/postName-6/</id>
     <published>2016-11-15T16:00:00.000Z</published>
-    <updated>2016-11-15T12:06:01.472Z</updated>
+    <updated>2016-11-15T16:12:02.471Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>成也开放</strong></p>
-<p><strong>败也开放</strong></p>
-<p>今天下午，华为开了 Mate 9 的中国发布会。</p>
+    <content type="html"><![CDATA[<h2 id="成也开放"><a href="#成也开放" class="headerlink" title="成也开放"></a><strong>成也开放</strong></h2><h2 id="败也开放"><a href="#败也开放" class="headerlink" title="败也开放"></a><strong>败也开放</strong></h2><p>今天下午，华为开了 Mate 9 的中国发布会。</p>
 <p>华为的手机一直都还算不错，这次的 Mate 9 看起来也很有料，但是对路这次最关心的不是手机，而是。。。</p>
 <p>华为在发布会上宣传安卓绿色联盟<br><a id="more"></a><br><img src="http://read.html5.qq.com/image?src=forum&amp;q=5&amp;r=0&amp;imgflag=7&amp;imageUrl=http://mmbiz.qpic.cn/mmbiz_png/yZPTcMGWibvsITOfNNSavNVXcfVBMsU6V9iczibp0b3T4uQXxhd2KQmFAMUzj9KR7wwib8QSibbibYqWuaoFPUZK7fIQ/0?wx_fmt=png" alt=""><br>（难道不该叫超级至尊全家桶联盟？）</p>
 <p>对路一看到百度、阿里、腾讯三个词，不由得虎躯一震，这仨厂还好意思谈绿色？</p>
@@ -115,9 +113,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;成也开放&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;败也开放&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;今天下午，华为开了 Mate 9 的中国发布会。&lt;/p&gt;
+      &lt;h2 id=&quot;成也开放&quot;&gt;&lt;a href=&quot;#成也开放&quot; class=&quot;headerlink&quot; title=&quot;成也开放&quot;&gt;&lt;/a&gt;&lt;strong&gt;成也开放&lt;/strong&gt;&lt;/h2&gt;&lt;h2 id=&quot;败也开放&quot;&gt;&lt;a href=&quot;#败也开放&quot; class=&quot;headerlink&quot; title=&quot;败也开放&quot;&gt;&lt;/a&gt;&lt;strong&gt;败也开放&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;今天下午，华为开了 Mate 9 的中国发布会。&lt;/p&gt;
 &lt;p&gt;华为的手机一直都还算不错，这次的 Mate 9 看起来也很有料，但是对路这次最关心的不是手机，而是。。。&lt;/p&gt;
 &lt;p&gt;华为在发布会上宣传安卓绿色联盟&lt;br&gt;
     
@@ -143,16 +139,14 @@
     <link href="http://duiluyo.github.io/2016/11/15/postName-4/"/>
     <id>http://duiluyo.github.io/2016/11/15/postName-4/</id>
     <published>2016-11-14T16:00:00.000Z</published>
-    <updated>2016-11-14T20:20:08.671Z</updated>
+    <updated>2016-11-15T16:11:46.178Z</updated>
     
-    <content type="html"><![CDATA[<hr>
-<p>哎～好几次失败弄的我全无乐趣！是时候暂停暂停了，哈哈哈！！！嗯～应该去哪里浪呢？？？这是个问题！！！</p>
+    <content type="html"><![CDATA[<p>哎～好几次失败弄的我全无乐趣！是时候暂停暂停了，哈哈哈！！！嗯～应该去哪里浪呢？？？这是个问题！！！</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;哎～好几次失败弄的我全无乐趣！是时候暂停暂停了，哈哈哈！！！嗯～应该去哪里浪呢？？？这是个问题！！！&lt;/p&gt;
+      &lt;p&gt;哎～好几次失败弄的我全无乐趣！是时候暂停暂停了，哈哈哈！！！嗯～应该去哪里浪呢？？？这是个问题！！！&lt;/p&gt;
 
     
     </summary>
@@ -171,7 +165,7 @@
     <link href="http://duiluyo.github.io/2016/11/15/postName-5/"/>
     <id>http://duiluyo.github.io/2016/11/15/postName-5/</id>
     <published>2016-11-14T16:00:00.000Z</published>
-    <updated>2016-11-15T08:39:04.066Z</updated>
+    <updated>2016-11-15T16:11:54.604Z</updated>
     
     <content type="html"><![CDATA[<p><a href="http://whatismarkdown.com/" target="_blank" rel="external">Markdown</a> 是一种基于文本的标记语言，由John Gruber在2004年创建，是一种以易于阅读的格式编写的可以转换为HTML的格式。它使用非常简单的格式化语法的熟悉的标点符号和字符，这使得写入内容为网络更快更直观的体验。本文介绍了编写、查看 Markdown 的78种工具，涵盖桌面端、移动端和 web 端。<a id="more"></a></p>
 <p>1.<a href="http://markable.in/" target="_blank" rel="external">Markable</a><br>强大的在线 Markdown 编辑器，支持语法高亮、自动缩进、高亮所在行、显示行数、即时预览。它支持将 HTML 转换成 Markdown。 可以配合 <a href="http://mashable.com/category/evernote/" target="_blank" rel="external">Evernote</a> 、<a href="http://mashable.com/category/dropbox/" target="_blank" rel="external">Dropbox</a> 使用。</p>
@@ -279,10 +273,9 @@
     <link href="http://duiluyo.github.io/2016/11/10/postName-2/"/>
     <id>http://duiluyo.github.io/2016/11/10/postName-2/</id>
     <published>2016-11-09T16:00:00.000Z</published>
-    <updated>2016-11-14T20:29:41.599Z</updated>
+    <updated>2016-11-15T16:11:16.428Z</updated>
     
-    <content type="html"><![CDATA[<hr>
-<h3 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h3><p><strong>Markdown</strong>是一种极简的标记语言，可以轻易的将文本转化为HTML。语法非常容易学习，简单到每个人都可以在5分钟之内学会。Markdown之所以越来越流行，不是因为它复杂，而是因为他足够简单。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<h3 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h3><p><strong>Markdown</strong>是一种极简的标记语言，可以轻易的将文本转化为HTML。语法非常容易学习，简单到每个人都可以在5分钟之内学会。Markdown之所以越来越流行，不是因为它复杂，而是因为他足够简单。<br><a id="more"></a></p>
 <h3 id="Markdown优点"><a href="#Markdown优点" class="headerlink" title="Markdown优点"></a>Markdown优点</h3><ul>
 <li>纯文本编写，兼容性很强，可以使用所有文本编辑器打开</li>
 <li>让写作者专注与文字而不是排版</li>
@@ -349,15 +342,14 @@
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>使用` {codeblock}<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">   ```<span class="function">java</span></div><div class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span>&#123;</div><div class="line"></div><div class="line">   &#125;</div><div class="line">``` `</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">publicstaticvoidmain(String[] args)&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="特殊表示"><a href="#特殊表示" class="headerlink" title="特殊表示"></a>特殊表示</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">~~删除元素~~</div><div class="line">++下划线++</div><div class="line">==高亮显示==</div></pre></td></tr></table></figure>
-<p>删除元素<br>++下划线++<br>==高亮显示==</p>
+<h3 id="特殊表示"><a href="#特殊表示" class="headerlink" title="特殊表示"></a>特殊表示</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">~~删除元素~~</div><div class="line">**高亮显示**</div></pre></td></tr></table></figure>
+<p><del>删除元素</del><br>++下划线++<br>==高亮显示==</p>
 <hr>
 ]]></content>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h3 id=&quot;Markdown是什么&quot;&gt;&lt;a href=&quot;#Markdown是什么&quot; class=&quot;headerlink&quot; title=&quot;Markdown是什么&quot;&gt;&lt;/a&gt;Markdown是什么&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt;是一种极简的标记语言，可以轻易的将文本转化为HTML。语法非常容易学习，简单到每个人都可以在5分钟之内学会。Markdown之所以越来越流行，不是因为它复杂，而是因为他足够简单。&lt;br&gt;
+      &lt;h3 id=&quot;Markdown是什么&quot;&gt;&lt;a href=&quot;#Markdown是什么&quot; class=&quot;headerlink&quot; title=&quot;Markdown是什么&quot;&gt;&lt;/a&gt;Markdown是什么&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt;是一种极简的标记语言，可以轻易的将文本转化为HTML。语法非常容易学习，简单到每个人都可以在5分钟之内学会。Markdown之所以越来越流行，不是因为它复杂，而是因为他足够简单。&lt;br&gt;
     
     </summary>
     
@@ -377,20 +369,16 @@
     <link href="http://duiluyo.github.io/2016/11/10/postName-3/"/>
     <id>http://duiluyo.github.io/2016/11/10/postName-3/</id>
     <published>2016-11-09T16:00:00.000Z</published>
-    <updated>2016-11-10T09:41:56.400Z</updated>
+    <updated>2016-11-15T16:11:36.889Z</updated>
     
-    <content type="html"><![CDATA[<hr>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
 <p>微盘挂了，360倒了，百度云盘也立了Flag。能让我们在云端储存分享文件的服务越来越少了。买一堆移动硬盘既不方便也不能解决实际需求。而事实上，你其实可以选择搭建只属于自己的至尊私享云盘服务！</p>
 <p>ownCloud是一个开源免费的云端文件储存分享平台，它支持包括网页、PC客户端、移动App在内的所有终端使用。 你可以搭建一个给自己用，也可以搭建好之后同朋友和家人分享。</p>
 </blockquote>
 <a id="more"></a>
-<blockquote>
-<p>最快捷！使用 Docker 的 ownCloud 镜像</p>
-<p>通过这种方法你几乎不需要懂得多少编程知识，你可以选用 DaoCloud 一类的在线Docker服务平台。</p>
-</blockquote>
-<p>P.S. 搜索“Docker云”之类的关键词，国内大概有三四家比较好用的，避免广告之嫌，这里就不直接放出链接了。</p>
-<h3 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h3><p>1.在 <a href="https://account.daocloud.io/signup" target="_blank" rel="external">DaoCloud signup</a> 注册免费的社区版账号：</p>
+<h2 id="最快捷！使用-Docker-的-ownCloud-镜像"><a href="#最快捷！使用-Docker-的-ownCloud-镜像" class="headerlink" title="最快捷！使用 Docker 的 ownCloud 镜像"></a>最快捷！使用 Docker 的 ownCloud 镜像</h2><p>通过这种方法你几乎不需要懂得多少编程知识，你可以选用 DaoCloud 一类的在线Docker服务平台。</p>
+<pre><code>P.S. 搜索“Docker云”之类的关键词，国内大概有三四家比较好用的，避免广告之嫌，这里就不直接放出链接了。
+</code></pre><h3 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h3><p>1.在 <a href="https://account.daocloud.io/signup" target="_blank" rel="external">DaoCloud signup</a> 注册免费的社区版账号：</p>
 <p><img src="http://1ke.co/files/course/2016/10-24/11574269f30d393473.png" alt="此处输入图片的描述"></p>
 <p>免费的社区版账号刚好够你搭建一个128MB内存，10GB存储的 ownCloud 服务。</p>
 <p>2.在 <a href="https://dashboard.daocloud.io/services" target="_blank" rel="external">DaoCloud services</a> 创建MySQL服务实例：</p>
@@ -428,7 +416,7 @@
 <p><a href="https://play.google.com/store/apps/details?id=com.owncloud.android" target="_blank" rel="external">Andorid</a></p>
 <p><img src="http://1ke.co/files/course/2016/10-24/1203473726fd938146.png" alt="此处输入图片的描述"></p>
 <hr>
-<h1 id="在-Ubuntu-服务器上搭建-ownCloud"><a href="#在-Ubuntu-服务器上搭建-ownCloud" class="headerlink" title="在 Ubuntu 服务器上搭建 ownCloud"></a>在 Ubuntu 服务器上搭建 ownCloud</h1><p>刚刚搭建的owncloud是没有注册功能的，只有管理员在后台添加用户。如果你想为你的小伙伴们搭建一个开放注册的云盘服务，你首先需要有一台自己的服务器（云服务器）。</p>
+<h2 id="在-Ubuntu-服务器上搭建-ownCloud"><a href="#在-Ubuntu-服务器上搭建-ownCloud" class="headerlink" title="在 Ubuntu 服务器上搭建 ownCloud"></a>在 Ubuntu 服务器上搭建 ownCloud</h2><p>刚刚搭建的owncloud是没有注册功能的，只有管理员在后台添加用户。如果你想为你的小伙伴们搭建一个开放注册的云盘服务，你首先需要有一台自己的服务器（云服务器）。</p>
 <p>先提供一个英文版的教程：<a href="https://www.tombrossman.com/blog/2016/install-owncloud-9-on-ubuntu-16.04/" target="_blank" rel="external">Install ownCloud 9 on Ubuntu 16.04 Server</a></p>
 <p>这需要你对Linux的使用有相当了解，根据教程安装完毕后还需要手动安装插件添加用户注册功能，配置SMTP服务，开启HTTPS加密，配置Memcached等等，为了对新手友好，这些内容就放到下一篇再介绍啦。</p>
 <p>最后如果你想在自己动手之前先预览一下效果，请移步：</p>
@@ -437,8 +425,7 @@
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;微盘挂了，360倒了，百度云盘也立了Flag。能让我们在云端储存分享文件的服务越来越少了。买一堆移动硬盘既不方便也不能解决实际需求。而事实上，你其实可以选择搭建只属于自己的至尊私享云盘服务！&lt;/p&gt;
 &lt;p&gt;ownCloud是一个开源免费的云端文件储存分享平台，它支持包括网页、PC客户端、移动App在内的所有终端使用。 你可以搭建一个给自己用，也可以搭建好之后同朋友和家人分享。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -461,29 +448,22 @@
     <link href="http://duiluyo.github.io/2016/11/09/postName-1/"/>
     <id>http://duiluyo.github.io/2016/11/09/postName-1/</id>
     <published>2016-11-08T16:00:00.000Z</published>
-    <updated>2016-11-10T09:26:07.356Z</updated>
+    <updated>2016-11-15T16:10:26.962Z</updated>
     
-    <content type="html"><![CDATA[<hr>
-<p>Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。<a id="more"></a></p>
+    <content type="html"><![CDATA[<p>Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。<a id="more"></a></p>
 <h1 id="Xposed框架如何安装"><a href="#Xposed框架如何安装" class="headerlink" title="Xposed框架如何安装"></a>Xposed框架如何安装</h1><p>Xposed 框架需要Android 4.0.3及更高版本才能安装，不过也有非官方支持的2.3版本，目前已经支持到Android 6.0版本，不过不同版本之间可能需要不同Xposed installer APP，目测会向后兼容。Xposed 框架也需要有ROOT授权才能正常使用，安装则不需要ROOT，目前已经支持中文。</p>
-<h2 id="正确的启用姿势如下："><a href="#正确的启用姿势如下：" class="headerlink" title="正确的启用姿势如下："></a>正确的启用姿势如下：</h2><p>安装 Xposed 框架安装器</p>
-<p>激活 Xposed 框架</p>
-<ul>
+<h2 id="正确的启用姿势如下："><a href="#正确的启用姿势如下：" class="headerlink" title="正确的启用姿势如下："></a>正确的启用姿势如下：</h2><h3 id="安装-Xposed-框架安装器"><a href="#安装-Xposed-框架安装器" class="headerlink" title="安装 Xposed 框架安装器"></a>安装 Xposed 框架安装器</h3><h3 id="激活-Xposed-框架"><a href="#激活-Xposed-框架" class="headerlink" title="激活 Xposed 框架"></a>激活 Xposed 框架</h3><ul>
 <li>点击后进入框架安装、升级界面，我们点击“安装/更新”，会出现ROOT授权提示，许可即可。</li>
 </ul>
-<p>重启</p>
-<p>选择模块</p>
-<ul>
+<h3 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h3><h3 id="选择模块"><a href="#选择模块" class="headerlink" title="选择模块"></a>选择模块</h3><ul>
 <li>我们安装Xposed 框架是为了使用各种模块，而增强手机的各种功能。在Xposed 框架安装器中可以点击“下载”进入模块仓库下载自己需要的模块。</li>
 </ul>
-<p>重启</p>
-<hr>
+<h3 id="重启-1"><a href="#重启-1" class="headerlink" title="重启"></a>重启</h3><hr>
 ]]></content>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。
+      &lt;p&gt;Xposed框架是一款可以在不修改APK的情况下影响程序运行（修改系统）的框架服务，基于它可以制作出许多功能强大的模块，且在功能不冲突的情况下同时运作。 当前，Per APP Setting（为每个应用设置单独的dpi或修改权限）、Cydia、XPrivacy（防止隐私泄露）、对原生Launcher替换图标等应用或功能均基于此框架。
     
     </summary>
     
@@ -501,10 +481,9 @@
     <link href="http://duiluyo.github.io/2016/11/06/postName/"/>
     <id>http://duiluyo.github.io/2016/11/06/postName/</id>
     <published>2016-11-05T23:56:27.000Z</published>
-    <updated>2016-11-09T18:17:53.049Z</updated>
+    <updated>2016-11-15T16:10:13.889Z</updated>
     
-    <content type="html"><![CDATA[<hr>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>习惯自己写Blog的朋友一定不会陌生Wordpress，或许也曾在新浪博客和QQ空间留过脚印，但静心认真思考一下，似乎我们又总是向往更加简单自由的写作方式。GitHub给我们提供了一个无限的空间，我们需要珍惜使用，而Hexo的出现从某种意义上来说代替了Jekyll，让我们可以更专注于写作本身。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>习惯自己写Blog的朋友一定不会陌生Wordpress，或许也曾在新浪博客和QQ空间留过脚印，但静心认真思考一下，似乎我们又总是向往更加简单自由的写作方式。GitHub给我们提供了一个无限的空间，我们需要珍惜使用，而Hexo的出现从某种意义上来说代替了Jekyll，让我们可以更专注于写作本身。<br><a id="more"></a></p>
 <blockquote>
 <p><strong>喜欢写Blog的人，会经历三个阶段。</strong><br>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。<br>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。<br>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
 <p>大多数Blog作者，都停留在第一和第二阶段，因为第三阶段不太容易到达：你很难找到俯首听命、愿意为你管理服务器的人。</p>
@@ -520,7 +499,7 @@
 <blockquote>
 <p>A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
 </blockquote>
-<p>类似于jekyll、Octopress、Wordpress，我们可以用Hexo创建自己的博客，托管到github、Heroku或Coding上，绑定自己的域名，用markdown写文章。<a href="http://duiluyo.github.io/" target="_blank" rel="external">本博客</a>即使用hexo创建并托管在github上。</p>
+<p>类似于jekyll、Octopress、Wordpress，我们可以用Hexo创建自己的博客，托管到github、Heroku或Coding上，绑定自己的域名，用markdown写文章。<a href="http://duiluyo.github.io/">本博客</a>即使用hexo创建并托管在github上。</p>
 <h3 id="为什么要用hexo"><a href="#为什么要用hexo" class="headerlink" title="为什么要用hexo"></a>为什么要用hexo</h3><blockquote>
 <p>不可思议的快速 ─ 只要一眨眼静态文件即生成完成<br>支持 Markdown<br>仅需一道指令即可部署到 GitHub Pages 和 Heroku<br>已移植 Octopress 插件<br>高扩展性、自订性<br>兼容于 Windows, Mac &amp; Linux*   易用。不仅部署简单，平时使用中仅需要<code>hexo new``hexo generate``hexo server``hexo deploy</code>四个命令。不像Jekyll需要很多繁琐的<code>git</code>命令。</p>
 <ul>
@@ -548,7 +527,7 @@
 <p>好了，至此，本地博客已经搭建起来了，只是本地哦，别人看不到的。下面，我们要部署到Github。</p>
 <hr>
 <h1 id="配置GitHub"><a href="#配置GitHub" class="headerlink" title="配置GitHub"></a>配置GitHub</h1><h3 id="注册Github账号"><a href="#注册Github账号" class="headerlink" title="注册Github账号"></a>注册Github账号</h3><p>已有账号可以跳过，没有的，请登录<a href="https://github.com/" target="_blank" rel="external">GitHub</a>进行注册，很简单，这里就不介绍了。</p>
-<h3 id="创建repository"><a href="#创建repository" class="headerlink" title="创建repository"></a>创建repository</h3><p>在自己Github主页右下角，创建<code>New repository</code>。<br>比如我的Github账号是<a href="https://github.com/duiluyo" target="_blank" rel="external">duiluyo</a>，那么我应该创建的repository名字应该是<code>duiluyo.github.io</code>。<br>首次创建耐心等待10分钟左右审核，之后即可访问静态主页如<a href="http://duiluyo.github.io/" target="_blank" rel="external">http://duiluyo.github.io</a></p>
+<h3 id="创建repository"><a href="#创建repository" class="headerlink" title="创建repository"></a>创建repository</h3><p>在自己Github主页右下角，创建<code>New repository</code>。<br>比如我的Github账号是<a href="https://github.com/duiluyo" target="_blank" rel="external">duiluyo</a>，那么我应该创建的repository名字应该是<code>duiluyo.github.io</code>。<br>首次创建耐心等待10分钟左右审核，之后即可访问静态主页如<a href="http://duiluyo.github.io/">http://duiluyo.github.io</a></p>
 <h3 id="配置部署"><a href="#配置部署" class="headerlink" title="配置部署"></a>配置部署</h3><p>编辑<code>_config.yml</code>(在<code>D:\hexo</code>下)。你在配置时，要把下面的duiluyo都换成你的账号名。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">type: git</div><div class="line">repository: https://github.com/duiluyo/duiluyo.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure>
 <p>注意：<code>type:空格git</code>。都要使用空格，自己遇到过这个问题，结果怎么都上传不上去，所以提醒下。</p>
@@ -616,8 +595,7 @@
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;习惯自己写Blog的朋友一定不会陌生Wordpress，或许也曾在新浪博客和QQ空间留过脚印，但静心认真思考一下，似乎我们又总是向往更加简单自由的写作方式。GitHub给我们提供了一个无限的空间，我们需要珍惜使用，而Hexo的出现从某种意义上来说代替了Jekyll，让我们可以更专注于写作本身。&lt;br&gt;
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;习惯自己写Blog的朋友一定不会陌生Wordpress，或许也曾在新浪博客和QQ空间留过脚印，但静心认真思考一下，似乎我们又总是向往更加简单自由的写作方式。GitHub给我们提供了一个无限的空间，我们需要珍惜使用，而Hexo的出现从某种意义上来说代替了Jekyll，让我们可以更专注于写作本身。&lt;br&gt;
     
     </summary>
     
