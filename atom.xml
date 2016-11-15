@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://duiluyo.github.io/"/>
-  <updated>2016-11-15T16:59:32.719Z</updated>
+  <updated>2016-11-15T17:01:59.841Z</updated>
   <id>http://duiluyo.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://duiluyo.github.io/2016/11/16/postName-7/"/>
     <id>http://duiluyo.github.io/2016/11/16/postName-7/</id>
     <published>2016-11-15T16:59:02.000Z</published>
-    <updated>2016-11-15T16:59:32.719Z</updated>
+    <updated>2016-11-15T17:01:59.841Z</updated>
     
     <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Freepbx是一个集成了Asterisk的工具，提供GUI (graphical user interface)用户图形界面。通过Freepbx可以十分方便的配置各类电话系统。由于Asterisk 包含广泛的 VoIP 协议诸如：SIP, IAX2 和 H.323 等等，所以安装了Freepbx之后，我们便可以通过Web页面，搭建属于自己的网络语音系统。</p>
 <h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><p>通过将Freepbx安装和配置在VPS中，由VPS为我们提供24小时在线的SIP服务器。我们可以通过SIP网关+普通话机、SIP软电话，利用预设的用户名和密码登陆到服务器中，进行账户之间的语音电话拨打。由于通话过程中的语音数据都是通过我们VPS来传递的。所以并不会产生额外的费用。但是如果需要将我们搭建的服务器拨通落地电话（固定电话、手机），则需要在Freebpx中配置相应的落地电话供应商。当然这也是需要额外付费的。</p>
@@ -72,8 +72,9 @@
 <h1 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h1><p>1.eyebeam</p>
 <p>Windows平台较为流行的一款SIP软电话软件。操作简便。</p>
 <p>2.Zoiper</p>
-<p>支持包括 Windwos、MAC、IOS、Android等各类平台的SIP软电话软件。<br><a href="http://www.izcv.com/tag/voip" target="_blank" rel="external">VOIP</a><br>原创文章转载请注明：转自热闹网：<a href="http://www.izcv.com/1310.html" target="_blank" rel="external">Freepbx-VPS搭建SIP服务器实现VOIP通话[图文教程]</a></p>
-]]></content>
+<p>支持包括 Windwos、MAC、IOS、Android等各类平台的SIP软电话软件。</p>
+<pre><code>原创文章转载请注明：转自热闹网：[Freepbx-VPS搭建SIP服务器实现VOIP通话[图文教程]](http://www.izcv.com/1310.html)
+</code></pre>]]></content>
     
     <summary type="html">
     
