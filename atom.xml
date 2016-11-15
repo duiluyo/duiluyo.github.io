@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://duiluyo.github.io/"/>
-  <updated>2016-11-15T16:57:20.486Z</updated>
+  <updated>2016-11-15T16:59:32.719Z</updated>
   <id>http://duiluyo.github.io/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Freepbx-VPS搭建SIP服务器实现VOIP通话</title>
-    <link href="http://duiluyo.github.io/2016/11/17/postName-7/"/>
-    <id>http://duiluyo.github.io/2016/11/17/postName-7/</id>
-    <published>2016-11-16T16:00:00.000Z</published>
-    <updated>2016-11-15T16:57:20.486Z</updated>
+    <link href="http://duiluyo.github.io/2016/11/16/postName-7/"/>
+    <id>http://duiluyo.github.io/2016/11/16/postName-7/</id>
+    <published>2016-11-15T16:59:02.000Z</published>
+    <updated>2016-11-15T16:59:32.719Z</updated>
     
     <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Freepbx是一个集成了Asterisk的工具，提供GUI (graphical user interface)用户图形界面。通过Freepbx可以十分方便的配置各类电话系统。由于Asterisk 包含广泛的 VoIP 协议诸如：SIP, IAX2 和 H.323 等等，所以安装了Freepbx之后，我们便可以通过Web页面，搭建属于自己的网络语音系统。</p>
 <h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><p>通过将Freepbx安装和配置在VPS中，由VPS为我们提供24小时在线的SIP服务器。我们可以通过SIP网关+普通话机、SIP软电话，利用预设的用户名和密码登陆到服务器中，进行账户之间的语音电话拨打。由于通话过程中的语音数据都是通过我们VPS来传递的。所以并不会产生额外的费用。但是如果需要将我们搭建的服务器拨通落地电话（固定电话、手机），则需要在Freebpx中配置相应的落地电话供应商。当然这也是需要额外付费的。</p>
@@ -208,6 +208,33 @@
       <category term="安卓" scheme="http://duiluyo.github.io/tags/%E5%AE%89%E5%8D%93/"/>
     
       <category term="android" scheme="http://duiluyo.github.io/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好，世界</title>
+    <link href="http://duiluyo.github.io/2016/11/15/hello-world/"/>
+    <id>http://duiluyo.github.io/2016/11/15/hello-world/</id>
+    <published>2016-11-15T10:56:10.557Z</published>
+    <updated>2016-11-14T20:29:12.495Z</updated>
+    
+    <content type="html"><![CDATA[<p>欢迎来到 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! 这是你的第一篇文章。 点击 <a href="https://hexo.io/docs/" target="_blank" rel="external">这里</a> 获得更多帮助。 如果您在使用Hexo碰到困难，你可以到这里 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">排除故障</a> 或者你可以去我的 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="编写一个新文档"><a href="#编写一个新文档" class="headerlink" title="编写一个新文档"></a>编写一个新文档</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">编写</a></p>
+<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">服务器</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">生成</a></p>
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>更多信息: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">部署</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;欢迎来到 &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! 这是你的第一篇文章。 点击 &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;这里&lt;/a&gt; 获得更多帮助。 如果您在使用Hexo碰到困难，你可以到这里 &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;排除故障&lt;/a&gt; 或者你可以去我的 &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;
+    
+    </summary>
+    
     
   </entry>
   
@@ -684,33 +711,6 @@
       <category term="GitHub" scheme="http://duiluyo.github.io/tags/GitHub/"/>
     
       <category term="使用X" scheme="http://duiluyo.github.io/tags/%E4%BD%BF%E7%94%A8X/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你好，世界</title>
-    <link href="http://duiluyo.github.io/2016/11/04/hello-world/"/>
-    <id>http://duiluyo.github.io/2016/11/04/hello-world/</id>
-    <published>2016-11-03T20:55:20.306Z</published>
-    <updated>2016-11-14T20:29:12.495Z</updated>
-    
-    <content type="html"><![CDATA[<p>欢迎来到 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! 这是你的第一篇文章。 点击 <a href="https://hexo.io/docs/" target="_blank" rel="external">这里</a> 获得更多帮助。 如果您在使用Hexo碰到困难，你可以到这里 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">排除故障</a> 或者你可以去我的 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="编写一个新文档"><a href="#编写一个新文档" class="headerlink" title="编写一个新文档"></a>编写一个新文档</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">编写</a></p>
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">服务器</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">生成</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">部署</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;欢迎来到 &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! 这是你的第一篇文章。 点击 &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;这里&lt;/a&gt; 获得更多帮助。 如果您在使用Hexo碰到困难，你可以到这里 &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;排除故障&lt;/a&gt; 或者你可以去我的 &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;
-    
-    </summary>
-    
     
   </entry>
   
