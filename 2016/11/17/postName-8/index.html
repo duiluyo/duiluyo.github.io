@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        云盘一个个倒下怎么办？无需编码，手把手教你搭建至尊私享云盘｜对路哟的博客
+        不花一分钱，搭建一个完全免费的Shadowsocks服务器｜对路哟的博客
         
     </title>
 
-    <link rel="canonical" href="http://duiluyo.github.io/2016/11/10/postName-3/">
+    <link rel="canonical" href="http://duiluyo.github.io/2016/11/17/postName-8/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -145,27 +145,27 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>云盘一个个倒下怎么办？无需编码，手把手教你搭建至尊私享云盘</h1>
+                    <h1>不花一分钱，搭建一个完全免费的Shadowsocks服务器</h1>
                     
                     <span class="meta">
                          作者 对路哟
                         <span>
-                          日期 2016-11-10
+                          日期 2016-11-17
                          </span>
                     </span>
                     <div class="tags text-center">
                         
-                        <a class="tag" href="/tags/#云盘"
-                           title="云盘">云盘</a>
+                        <a class="tag" href="/tags/#免费"
+                           title="免费">免费</a>
                         
-                        <a class="tag" href="/tags/#ownCloud"
-                           title="ownCloud">ownCloud</a>
+                        <a class="tag" href="/tags/#Shadowsocks"
+                           title="Shadowsocks">Shadowsocks</a>
                         
-                        <a class="tag" href="/tags/#Cloud"
-                           title="Cloud">Cloud</a>
+                        <a class="tag" href="/tags/#服务器"
+                           title="服务器">服务器</a>
                         
-                        <a class="tag" href="/tags/#私有云"
-                           title="私有云">私有云</a>
+                        <a class="tag" href="/tags/#getcarina"
+                           title="getcarina">getcarina</a>
                         
                     </div>
                 </div>
@@ -174,7 +174,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            云盘一个个倒下怎么办？无需编码，手把手教你搭建至尊私享云盘
+            不花一分钱，搭建一个完全免费的Shadowsocks服务器
         </span>
     </div>
 </header>
@@ -185,71 +185,42 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>微盘挂了，360倒了，百度云盘也立了Flag。能让我们在云端储存分享文件的服务越来越少了。买一堆移动硬盘既不方便也不能解决实际需求。而事实上，你其实可以选择搭建只属于自己的至尊私享云盘服务！</p>
-<p>ownCloud是一个开源免费的云端文件储存分享平台，它支持包括网页、PC客户端、移动App在内的所有终端使用。 你可以搭建一个给自己用，也可以搭建好之后同朋友和家人分享。</p>
-</blockquote>
-<a id="more"></a>
-<h2 id="最快捷！使用-Docker-的-ownCloud-镜像"><a href="#最快捷！使用-Docker-的-ownCloud-镜像" class="headerlink" title="最快捷！使用 Docker 的 ownCloud 镜像"></a>最快捷！使用 Docker 的 ownCloud 镜像</h2><p>通过这种方法你几乎不需要懂得多少编程知识，你可以选用 DaoCloud 一类的在线Docker服务平台。</p>
-<pre><code>P.S. 搜索“Docker云”之类的关键词，国内大概有三四家比较好用的，避免广告之嫌，这里就不直接放出链接了。
-</code></pre><h3 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h3><p>1.在 <a href="https://account.daocloud.io/signup" target="_blank" rel="external">DaoCloud signup</a> 注册免费的社区版账号：</p>
-<p><img src="http://1ke.co/files/course/2016/10-24/11574269f30d393473.png" alt="此处输入图片的描述"></p>
-<p>免费的社区版账号刚好够你搭建一个128MB内存，10GB存储的 ownCloud 服务。</p>
-<p>2.在 <a href="https://dashboard.daocloud.io/services" target="_blank" rel="external">DaoCloud services</a> 创建MySQL服务实例：</p>
-<p><img src="http://1ke.co/files/course/2016/10-24/115804cd27e2827232.png" alt="此处输入图片的描述"></p>
-<p><img src="http://1ke.co/files/course/2016/10-24/11584004bfd5327199.png" alt="此处输入图片的描述"></p>
-<p><img src="http://1ke.co/files/course/2016/10-24/11585608dee1853689.png" alt="此处输入图片的描述"></p>
-<p>3.在 <a href="https://dashboard.daocloud.io/volumes" target="_blank" rel="external">DaoCloud volumes</a> 创建挂载盘：</p>
-<p><img src="http://1ke.co/files/course/2016/10-24/115920848a55859788.png" alt="此处输入图片的描述"></p>
-<p><img src="http://1ke.co/files/course/2016/10-24/1159357317d0768671.png" alt="此处输入图片的描述"></p>
-<p>选择默认的1x的10G容量就好，否则将没有足够的资源创建ownCloud应用。</p>
-<p>4.在镜像市场搜索owncloud镜像并选择部署<a href="https://dashboard.daocloud.io/packages/5e14eddc-fbd7-47e9-a4a1-d9dddd13a0fb" target="_blank" rel="external">daocloud.io/library/owncloud</a>：<br><img src="http://1ke.co/files/course/2016/10-24/1200066b549a595494.png" alt="此处输入图片的描述"><br>注意！ 一定要选择 latest 版本进行部署：</p>
-<p>注意！ 一定要选择 latest 版本进行部署：</p>
-<p>注意！ 一定要选择 latest 版本进行部署：<br><img src="http://1ke.co/files/course/2016/10-24/120028cc6237652126.png" alt="此处输入图片的描述"><br>5.根据应用部署流程一步一步操作：</p>
-<p><img src="http://1ke.co/files/course/2016/10-24/120047f3b199438209.png" alt="此处输入图片的描述"></p>
-<p>绑定 MySQL 服务：</p>
-<p><img src="http://1ke.co/files/course/2016/10-24/1201062c6293374960.png" alt="此处输入图片的描述"></p>
-<p>绑定 Volume 挂载盘。</p>
-<p> <img src="http://1ke.co/files/course/2016/10-24/120119f27bd1810207.png" alt="此处输入图片的描述"></p>
-<p>记得要把容器路径设定为<code>/var/www/html/data</code>这将是你云端文件储存的路径。</p>
-<p><img src="http://1ke.co/files/course/2016/10-24/1201371d924c632359.png" alt="此处输入图片的描述"></p>
-<p>点击立即部署等待应用创建完成。</p>
-<p> <img src="http://1ke.co/files/course/2016/10-24/120155300dc4670124.png" alt="此处输入图片的描述"></p>
-<p>6.在浏览器中打开你的应用：</p>
-<p><img src="http://1ke.co/files/course/2016/10-24/120218a16668100622.png" alt="此处输入图片的描述"></p>
-<p>7.设置管理员密码和MySQL连接信息：</p>
-<p> <img src="http://1ke.co/files/course/2016/10-24/1202571b00ad599383.png" alt="此处输入图片的描述"></p>
-<p>数据库的连接信息在这里：<a href="https://dashboard.daocloud.io/services" target="_blank" rel="external">DaoCloud Services</a> 中选择 我的服务 查看。</p>
-<p><img src="http://1ke.co/files/course/2016/10-24/1203219f2b0b182814.png" alt="此处输入图片的描述"></p>
-<p>8.大功告成啦！</p>
-<p>你可以下载 ownCloud 在各个平台上的客户端，在你的多种设备直接同步共享文件：</p>
-<p><a href="https://download.owncloud.com/desktop/stable/ownCloud-2.2.4.6408-setup.exe" target="_blank" rel="external">Windows</a></p>
-<p><a href="https://download.owncloud.com/desktop/stable/ownCloud-2.2.4.3709.pkg" target="_blank" rel="external">Mac</a></p>
-<p>Linux<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">software.opensuse.org: Install package isv:ownCloud:desktop / owncloud-client</div></pre></td></tr></table></figure></p>
-<p><a href="https://itunes.apple.com/cn/app/id543672169" target="_blank" rel="external">IOS</a></p>
-<p><a href="https://play.google.com/store/apps/details?id=com.owncloud.android" target="_blank" rel="external">Andorid</a></p>
-<p><img src="http://1ke.co/files/course/2016/10-24/1203473726fd938146.png" alt="此处输入图片的描述"></p>
-<hr>
-<h2 id="在-Ubuntu-服务器上搭建-ownCloud"><a href="#在-Ubuntu-服务器上搭建-ownCloud" class="headerlink" title="在 Ubuntu 服务器上搭建 ownCloud"></a>在 Ubuntu 服务器上搭建 ownCloud</h2><p>刚刚搭建的owncloud是没有注册功能的，只有管理员在后台添加用户。如果你想为你的小伙伴们搭建一个开放注册的云盘服务，你首先需要有一台自己的服务器（云服务器）。</p>
-<p>先提供一个英文版的教程：<a href="https://www.tombrossman.com/blog/2016/install-owncloud-9-on-ubuntu-16.04/" target="_blank" rel="external">Install ownCloud 9 on Ubuntu 16.04 Server</a></p>
-<p>这需要你对Linux的使用有相当了解，根据教程安装完毕后还需要手动安装插件添加用户注册功能，配置SMTP服务，开启HTTPS加密，配置Memcached等等，为了对新手友好，这些内容就放到下一篇再介绍啦。</p>
-<p>最后如果你想在自己动手之前先预览一下效果，请移步：</p>
-<p><a href="http://pan.daoapp.io/" target="_blank" rel="external">ownCloud on DaoCloud</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">用户名：admin</div><div class="line">密码：admin</div></pre></td></tr></table></figure></p>
+                <p>嗯，这世界真的存在一分钱不用花的免费shadowsocks服务器，而且是你自己搭的，没有任何风险。</p>
+<p>到 <a href="https://getcarina.com" target="_blank" rel="external">https://getcarina.com</a> 去注册一个账号，然后激活它，这家是rackspace支持的，财大气粗啊：<br><img src="http://www.rendoumi.com/content/images/2016/04/docker13.png" alt=""></p>
+<p>然后登陆，会要求你输入一个手机号，没问题，其实一个手机号可以重复使用N次的（有的朋友收不到短信，没办法，换个手机号试试吧）： <img src="http://www.rendoumi.com/content/images/2016/03/docker02-1.png" alt=""> 输入手机验证码后正式进去，界面超级简陋，没关系，点击增加一个cluster: <img src="http://www.rendoumi.com/content/images/2016/03/docker03-1.png" alt=""></p>
+<p>输入cluster的名称，就叫shadowsocks好了，不用选autoscale，没必要自动伸缩: <img src="http://www.rendoumi.com/content/images/2016/03/docker04-1.png" alt=""></p>
+<p>然后系统建立cluster，会花一点时间，这个过程有可能失败，不要紧，删掉cluser，重建即可: <img src="http://www.rendoumi.com/content/images/2016/03/docker05-1.png" alt=""></p>
+<p>建好后STATUS变成了绿色的active: <img src="http://www.rendoumi.com/content/images/2016/03/docker06-1.png" alt=""></p>
+<p>点击下面的按钮Get access，会有一个Download file，点击下载，会 下载回来一个zip压缩包。 <img src="http://www.rendoumi.com/content/images/2016/03/docker07-1.png" alt=""></p>
+<p>再下载Docker的命令行软件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://get.docker.com/builds/Windows/x86_64/docker-1.10.1.exe</div></pre></td></tr></table></figure>
+<p>把docker-1.10.1.exe改名为docker.exe，并且把压缩包里的文件解压，都一起放到c:\docker目录下，一共有9个文件，如下图： <img src="http://www.rendoumi.com/content/images/2016/03/docker08-1.png" alt=""></p>
+<p>打开个命令行窗口，进入c:\docker，执行docker.cmd，初始化一下环境变量： <img src="http://www.rendoumi.com/content/images/2016/03/docker09-1.png" alt=""></p>
+<p>执行docker.exe info，看看能否正确连上，：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">c:\docker&gt;docker.exe info</div></pre></td></tr></table></figure>
+<p>显示连上，内存有4G，给的真不少，其实硬盘是给了60G的，很大方： <img src="http://www.rendoumi.com/content/images/2016/03/docker10-1.png" alt=""></p>
+<p>先创建网络，然后创建docker容器，注意语法，<mark>-k xxxxxxxx</mark>这里是密码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">c:\docker&gt;docker.exe network create wordnet  </div><div class="line">c:\docker&gt;docker.exe run --detach --name shadowsocks --net wordnet --publish 8989:8989 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 8989 -k xxxxxxxx -m aes-256-cfb  </div><div class="line">c:\docker&gt;docker.exe port shadowsocks 8989  </div><div class="line">c:\docker&gt;docker.exe ps</div></pre></td></tr></table></figure>
+<p>结果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">c:\docker&gt;docker.exe network create wordnet  </div><div class="line">06969014cae271d932f9b25faf188a17f18ec7323c80a9d0503189fa78a3d3c7</div><div class="line"></div><div class="line">c:\docker&gt;docker.exe run --detach --name shadowsocks --net wordnet --publish 8989:8989 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 8989 -k xxxxxxxx -m aes-256-cfb  </div><div class="line">e2dba5c7bb34453949bfe9f1aa80075f36c085cdcdeca5136bf9d2b3db18e019</div><div class="line"></div><div class="line">c:\docker&gt;docker.exe port shadowsocks  </div><div class="line">8989/tcp -&gt; 172.99.65.115:8989</div><div class="line"></div><div class="line">c:\docker&gt;docker.exe port shadowsocks 8989  </div><div class="line">172.99.65.115:8989</div><div class="line"></div><div class="line">c:\docker&gt;docker.exe ps  </div><div class="line">CONTAINER ID        IMAGE                             COMMAND                  C  </div><div class="line">REATED              STATUS              PORTS                          NAMES  </div><div class="line">e2dba5c7bb34        oddrationale/docker-shadowsocks   &quot;/usr/local/bin/ssser&quot;   A  </div><div class="line">bout a minute ago   Up About a minute   172.99.65.115:8989-&gt;8989/tcp   159f960b-  </div><div class="line">a280-41a5-a90b-5e6b27ea2e34-n1/shadowsocks  </div><div class="line">69284d39a550        carina/consul                     &quot;/bin/consul agent -b&quot;   3  </div><div class="line">4 minutes ago       Up 34 minutes                                      159f960b-  </div><div class="line">a280-41a5-a90b-5e6b27ea2e34-n1/carina-svcd</div></pre></td></tr></table></figure>
+<p><img src="http://www.rendoumi.com/content/images/2016/03/docker11-1.png" alt=""></p>
+<p>记下port命令的结果，172.99.65.115:8989，在shadowsocks的客户端里配一下： <img src="http://www.rendoumi.com/content/images/2016/03/docker12-1.png" alt=""></p>
+<p>好了，愉快的上网吧。其实还可以搭博客等等，看你自己的需求了。</p>
+<p>补充一下： 上面是用win7 64bit的系统，如果你是用32bit的系统，那么下载下面这个文件即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://get.docker.com/builds/Windows/i386/docker-1.10.1.exe</div></pre></td></tr></table></figure>
+<p>如果你用的是linux，那就更简单了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">wget https://get.docker.com/builds/Linux/x86_64/docker-1.10.1  </div><div class="line">mv docker-1.10.1 docker  </div><div class="line">chmod 755 docker  </div><div class="line">./docker --help </div><div class="line">./docker -v </div><div class="line">source docker.env  </div><div class="line">./docker info</div></pre></td></tr></table></figure>
+<p>以下命令就相同了。</p>
 
                 <hr>
                 
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2016/11/15/postName-5/" data-toggle="tooltip" data-placement="top"
-                           title="78 款 Markdown 工具">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2016/11/10/postName-2/" data-toggle="tooltip" data-placement="top"
-                           title="Markdown 新手指南">Next Post &rarr;</a>
+                        <a href="/2016/11/16/postName-7/" data-toggle="tooltip" data-placement="top"
+                           title="Freepbx-VPS搭建SIP服务器实现VOIP通话">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -262,7 +233,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#最快捷！使用-Docker-的-ownCloud-镜像"><span class="toc-text">最快捷！使用 Docker 的 ownCloud 镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建步骤"><span class="toc-text">搭建步骤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在-Ubuntu-服务器上搭建-ownCloud"><span class="toc-text">在 Ubuntu 服务器上搭建 ownCloud</span></a></li></ol></li></ol>
+                    
                 </div>
             </div>
         </div>
@@ -284,17 +255,17 @@
                     </h5>
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#云盘"
-                           title="云盘">云盘</a>
+                        <a class="tag" href="/tags/#免费"
+                           title="免费">免费</a>
                         
-                        <a class="tag" href="/tags/#ownCloud"
-                           title="ownCloud">ownCloud</a>
+                        <a class="tag" href="/tags/#Shadowsocks"
+                           title="Shadowsocks">Shadowsocks</a>
                         
-                        <a class="tag" href="/tags/#Cloud"
-                           title="Cloud">Cloud</a>
+                        <a class="tag" href="/tags/#服务器"
+                           title="服务器">服务器</a>
                         
-                        <a class="tag" href="/tags/#私有云"
-                           title="私有云">私有云</a>
+                        <a class="tag" href="/tags/#getcarina"
+                           title="getcarina">getcarina</a>
                         
                     </div>
                 </section>
