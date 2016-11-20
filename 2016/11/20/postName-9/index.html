@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="对路哟在 Github 上的个人博客">
+    <meta name="keyword" content="null">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="duiluyo" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        Win下最爱效率神器:AutoHotKey｜对路哟的博客
+        
+    </title>
+
+    <link rel="canonical" href="http://duiluyo.github.io/2016/11/20/postName-9/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('//o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    duiluyo
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/Tags/">Tags</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://ogni2ad79.bkt.clouddn.com/IMG_20160525_154623~01.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://ogni2ad79.bkt.clouddn.com/IMG_20160525_154623~01.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>Win下最爱效率神器:AutoHotKey</h1>
+                    
+                    <span class="meta">
+                         作者 对路哟
+                        <span>
+                          日期 2016-11-20
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#AutoHotKey"
+                           title="AutoHotKey">AutoHotKey</a>
+                        
+                        <a class="tag" href="/tags/#windows"
+                           title="windows">windows</a>
+                        
+                        <a class="tag" href="/tags/#快捷"
+                           title="快捷">快捷</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            Win下最爱效率神器:AutoHotKey
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p><strong><a href="https://autohotkey.com/" target="_blank" rel="external">AutoHotkey</a></strong>是一个windows下的开源、免费、自动化软件工具。它由最初旨在提供键盘快捷键的脚本语言驱动(称为：<strong>热键</strong>)，随着时间的推移演变成一个完整的脚本语言。但你不需要把它想得太深，你只需要知道它可以简化你的重复性工作，一键自动化启动或运行程序等等；以此提高我们的<strong>工作效率</strong>，改善<strong>生活品质</strong>；通过按键映射，鼠标模拟，定义宏等。</p>
+<p><img src="http://7xoosr.com1.z0.glb.clouddn.com/AutoHotKeyBg.jpg" alt="图片来自：zoommyapp.com"></p>
+<p>如要问<strong>AutoHotKey</strong>是什么？这是一个仁者见仁，智者见智的问题。你可以将其看作是一个热键增添器，也可以当成改键器/屏幕录制器，或者是游戏热键外挂等等。你可以在<a href="https://autohotkey.com/boards/viewtopic.php?f=29&amp;t=4199" target="_blank" rel="external">AutoHotkey 擅长什么？</a>得到一个方向；笔者这里只是介绍一些粗浅却很实用的用法，与诸君分享。</p>
+<h2 id="下载安装AutoHotkey"><a href="#下载安装AutoHotkey" class="headerlink" title="下载安装AutoHotkey"></a><strong>下载安装AutoHotkey</strong></h2><p>在浏览器中输入网址 <a href="http://www.autohotkey.com/" target="_blank" rel="external">http://www.autohotkey.com/</a> 进入AutoHotkey的官网，点击“download”下载即可将AutoHotkey保存到本地磁盘。接着双击点击安装就可以了。</p>
+<h2 id="建立AutoHotkey脚本"><a href="#建立AutoHotkey脚本" class="headerlink" title="建立AutoHotkey脚本"></a><strong>建立AutoHotkey脚本</strong></h2><p>安装完成后默认会在系统盘的“本地文档”下创建一个”AutoHotkey.ahk”脚本，双击以后我们会看到任务栏右下角有个图标，就表示它在运行了[如下图标注处所示]。我们在里面写入相应的映射代码然后右击选择”<strong>reload this script</strong>“执行它就可以开始使用AutoHotkey里面设置好的功能了。<br>如果我们想在其他地方放置脚本怎么办呢？很简单，只要新建一个文本文档，将其后缀名改为.ahk然后执行它就行了。所以，在同一台电脑中，你甚至可以存放多个脚本。当用不到该脚本了只需要，鼠标移到该图标处，右键选择<strong>exit</strong>即可，很是方便。</p>
+<p>为了方便修改该脚本，你可以将其放置于你觉得方便的位置，丝毫不影响，双击可运行之。我们还可以为该脚本设置开机自启动，只需要将该脚本生成一个“快捷方式”，然后将此快捷方式放置到程序自启动文件夹之下即可,一般都在这儿：</p>
+<blockquote>
+<p>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</p>
+</blockquote>
+<p>如此一开机，就可以使用脚本中所配置的功能，大为便捷。</p>
+<h2 id="简单实用的实例"><a href="#简单实用的实例" class="headerlink" title="简单实用的实例"></a><strong>简单实用的实例</strong></h2><p>这里简单说明下脚本中常用符号代表的含义：</p>
+<blockquote>
+<p><strong>#</strong> 号代表 <strong><em>Win</em></strong> 键；<br><strong>!</strong> 号代表 <strong><em>Alt</em></strong> 键；<br><strong>^</strong> 号代表 <strong><em>Ctrl</em></strong> 键；<br><strong>+</strong> 号代表 <strong><em>shift</em></strong> 键；<br><strong>::</strong> 号(两个英文冒号)起分隔作用；<br><strong>run</strong>，非常常用 的 AHK 命令之一;<br><strong>;</strong> 号代表 注释后面一行内容；</p>
+</blockquote>
+<p><strong>run</strong>它的后面是要运行的程序完整路径（比如我的<strong>Sublime</strong>的完整路径是：D:\Program Files (x86)\Sublime Text 3\sublime_text.exe）或网址。为什么第一行代码只是写着“notepad”，没有写上完整路径？因为“notepad”是“运行”对话框中的命令之一。</p>
+<p>如果你想按下“Ctrl + Alt + Shift + Win + Q”（这个快捷键真拉风啊。(￣▽￣)）来启动 QQ 的话，可以这样写：</p>
+<blockquote>
+<p>^!+#q::run  QQ所在完整路径地址。</p>
+</blockquote>
+<p><strong>AutoHotKey</strong>的强大，有类似Mac下的<strong>Alfred2</strong>之风，可以自我定制(当然啦，后者还是强大太多)。所以可以说，她强大与否，在于使用者的你爱或者不爱<code>折腾</code>。学以致用，如果简单的折腾下，可以使得我们工作效率大幅提升，何乐不为？况且，在见识的增长中，这可以给我们思维带来极大的营养。以下是笔者常用功能的脚本配置：</p>
+<h3 id="极速打开网页"><a href="#极速打开网页" class="headerlink" title="极速打开网页"></a><strong>极速打开网页</strong></h3><pre><code>;Notes: #==win !==Alt 2015-05-20  ^==Ctr  +==shift
+
+;=========================================================================
+
+#j::Run www.jeffjade.com
+
+#b::Run https://www.baidu.com/
+
+#c::Run https://www.google.com/
+
+#y::Run http://www.cnblogs.com/jadeboy/
+
+#0::Run https://tinypng.com/
+
+#v::Run https://www.v2ex.com/
+
+;-------------------------------------------------------------------------
+</code></pre><p>这是特常用的功能；如上脚本，<strong>Win+J</strong>即可打开自己个人博客，<strong>Win+0</strong>则打开熊猫网址去压缩图片… …。不管pc焦点何在，使用自己配置的快捷键，即可达到所想，方便而快捷，大慰我心。网上冲浪，自然选取了Chrome，配之以<strong>Vimium</strong>插件<a href="http://www.jeffjade.com/2015/10/19/2015-10-18-chrome-vimium/" target="_blank" rel="external">Vimium~让您的Chrome起飞</a>，分分钟甩掉鼠标；生命聊聊不过百年，如此短暂，在鼠标经常性滑过去来做一些可以更高便捷的事儿，所不必要消耗的一秒半秒，我没那么慷慨(即使我会花费更多时间去发发呆)。 </p>
+<blockquote>
+<p><strong>温馨提示</strong>： 以下几个系统默认的 Win 快捷键：<br>Win + E：打开资源管理器；<br>Win + D：显示桌面；<br>Win + F：打开查找对话框；<br>Win + R：打开运行对话框；<br>Win + L：锁定电脑；<br>Win + PauseBreak：打开系统属性对话框;<br>Win + Q: 本地文件/网页等搜索;<br>Win + U: 打开控制面板－轻松使用设置中心;</p>
+</blockquote>
+<h3 id="便捷呼出程序"><a href="#便捷呼出程序" class="headerlink" title="便捷呼出程序"></a><strong>便捷呼出程序</strong></h3><pre><code>!n::run notepad
+
+!c::run, D:\SoftwareKit\_jade_new_soft\cmd_markdown_win64\Cmd Markdown.exe
+
+!r:: run, D:\SoftwareKit\_jade_new_soft\cmder_mini\Cmder.exe
+
+!q::run, D:\Program Files (x86)\Tencent\QQIntl\QQUninst.exe
+
+!space::run, D:\Program Files (x86)\Sublime Text 3\sublime_text.exe
+
+;==========================================================================
+</code></pre><p>以上为<strong>Alt</strong>外加一些键来打开本地应用程序。即便完全可以自己配置<strong>热键</strong>，但是一旦多了，不常用的话记起来也略显麻烦。所以选择<strong>Alt</strong>键组合来打开本地应用程序。<strong>Win</strong>键来呼出网页。在有了<strong>Launchy</strong>这类软件之后，也就不怎么过为本地程序配置快捷键了。</p>
+<p>之前一段时间认为，珍爱生命，就当远离Windows。在给其配了SSD硬盘，在不断折腾应用一些软件，在不断了解&amp;熟悉Windows之后，这一想法倒也缓和了不少。Windows下的<strong>AutoHotKey</strong> + <strong>Listary</strong> + <strong>Launchy</strong> 组合，倒也有了点Mac下 <code>Alfred2</code>免费功能部分。这一点在<a href="http://www.jeffjade.com/2015/10/19/2015-10-18-Efficacious-win-software/" target="_blank" rel="external">Windows下效率必备软件</a>中有过记载。</p>
+<h3 id="一键拷贝文件路径"><a href="#一键拷贝文件路径" class="headerlink" title="一键拷贝文件路径"></a><strong>一键拷贝文件路径</strong></h3><pre><code>^+c::
+
+; null= 
+
+send ^c
+
+sleep,200
+
+clipboard=%clipboard% ;%null%
+
+tooltip,%clipboard%
+
+sleep,500
+
+tooltip,
+
+return
+</code></pre><p>只需要<strong>Ctrl+shift+c</strong>即可拷贝文件路径；方便快捷，爽！。</p>
+<h3 id="改掉大写键为Enter"><a href="#改掉大写键为Enter" class="headerlink" title="改掉大写键为Enter"></a><strong>改掉大写键为Enter</strong></h3><pre><code>;replace CapsLock to LeftEnter; CapsLock = Alt CapsLock
+
+$CapsLock::Enter
+
+LAlt &amp; Capslock::SetCapsLockState, % GetKeyState(&quot;CapsLock&quot;, &quot;T&quot;) ? &quot;Off&quot; : &quot;On&quot;
+
+!u::Send ^c !&amp;#123;tab&amp;#125; ^v
+</code></pre><p>看网上朋友说<strong>CapsLock</strong>(大写切换按键)没怎么大用处；想来也是，个人每次需要输入大写字符，也是配合Shift来实现。那么此按键意义何在？那就改成<strong>Enter</strong>键好了。有时候右手需要操纵鼠标时候，左手小拇指按此键来实现换行，蛮好；既然大写切换不怎么常用，那么用<strong>Alt+CapsLock</strong>来组合实现也无不妥；以上脚本即为此意。</p>
+<h3 id="缩写快速打出常用语"><a href="#缩写快速打出常用语" class="headerlink" title="缩写快速打出常用语"></a><strong>缩写快速打出常用语</strong></h3><pre><code>::/mail::gmail@gmail.com
+
+::/jeff::http://www.jeffjade.com/
+
+::/con::console.log();
+
+::/js::javascript:;
+
+::/fk::轩先生这会子肯定在忙，请骚后。thx。祝君：天天开心，日日欣悦。
+</code></pre><p><strong>AutoHotKey</strong>一个很强大之处，在任何能正常显示 <strong>unicode</strong>字符的程序中（比如浏览器的地址栏、MS Word Rtx）；如以上代码，键入<code>/jeff</code> 后，再加<strong>空格</strong>、或 <strong>tab</strong>、或<strong>回车</strong>，就可以触发缩写；根据输入不同方式（空格，tab，回车）输出的内容后也相应附加了[空格/tab/回车，用起来很是舒爽]; 当然了这里<code>/jeff</code>也可以配置其他如<code>:jeff</code>，按照个人喜好了。</p>
+<h3 id="颜色神偷"><a href="#颜色神偷" class="headerlink" title="颜色神偷"></a><strong>颜色神偷</strong></h3><pre><code>^#c::
+
+MouseGetPos, mouseX, mouseY
+
+; 获得鼠标所在坐标，把鼠标的 X 坐标赋值给变量 mouseX ，同理 mouseY
+
+PixelGetColor, color, %mouseX%, %mouseY%, RGB
+
+; 调用 PixelGetColor 函数，获得鼠标所在坐标的 RGB 值，并赋值给 color
+
+StringRight color,color,6
+
+; 截取 color（第二个 color）右边的6个字符，因为获得的值是这样的：#RRGGBB，一般我们只需要 RRGGBB 部分。把截取到的值再赋给 color（第一个 color）。
+
+clipboard = %color%
+
+; 把 color 的值发送到剪贴板
+
+return
+</code></pre><p>这个功能，搞Web前端还是可以备着的。很好用，按下配置好快捷键，即可取得鼠标所在光标处颜色色值到剪切版中－爽啊。(个人用<code>Win+C</code>呼出了 <strong>Chrome</strong>，<code>Alt+C</code>调出作业部落客户端<strong>Cmd Markdown</strong>,所以这里就用了<code>Ctrl+Win+c</code>来取色，也还算方便)</p>
+<h3 id="神速激活-打开-隐藏程序"><a href="#神速激活-打开-隐藏程序" class="headerlink" title="神速激活/打开/隐藏程序"></a><strong>神速激活/打开/隐藏程序</strong></h3><pre><code>#c::
+
+IfWinNotExist ahk_class Chrome_WidgetWin_1
+
+&amp;#123;
+
+    Run &quot;C:\Users\Administrator\AppData\Local\Google\Chrome\Application\chrome.exe&quot;
+
+    WinActivate
+
+&amp;#125;
+
+Else IfWinNotActive ahk_class Chrome_WidgetWin_1
+
+&amp;#123;
+
+    WinActivate
+
+&amp;#125;
+
+Else
+
+&amp;#123;
+
+    WinMinimize
+
+&amp;#125;
+
+Return
+</code></pre><p>以上这段脚本可以做到，使得Chrome的各种状态灵活切换：<strong>Win+C</strong>,Chrome没打开状态时候 –&gt; 打开；打开没激活状态时候 –&gt; 激活；打开处在激活状态时候 —&gt; 隐藏。恩，反正个人用着挺爽的，你也试试？</p>
+<h2 id="折腾AutoHotKey总结"><a href="#折腾AutoHotKey总结" class="headerlink" title="折腾AutoHotKey总结"></a><strong>折腾AutoHotKey总结</strong></h2><p><strong>折腾</strong>是奔着实用才去做的，所以笔者也只是看下可以常用功能而已。其实<strong>AutoHotKey</strong>远不止如此；<a href="https://autohotkey.com/boards/viewtopic.php?t=1099" target="_blank" rel="external">AutoHotkey 学习指南</a>这里可见一斑。网络上也可以搜出<strong>AutoHotKey 懒人包</strong>，里面有二十余脚本，如：<em>“计时器”</em>，<em>“禁止Win键”</em>，<em>“秒杀窗口，左键加右键”</em>云云；需要的话下载即可使用；知乎有一专栏<a href="http://zhuanlan.zhihu.com/autohotkey" target="_blank" rel="external">AutoHotkey 之美</a>，粗略扫了下，算是一可以扩充见识之门；<a href="http://nicejade.github.io/2016/03/12/share-autohotkey-script.html" target="_blank" rel="external">AutoHotKey实用脚本分享</a>一文介绍了一些常用脚本实例，有兴趣更多了解<strong>AutoHotKey</strong>的朋友们，可参看下。</p>
+<p><strong>AutoHotKey</strong>定有很多好用的功能，此文仅作简单介绍，抛砖以引美玉。希望知道更多有用玩法的朋友可以慷慨分享，让我等Coder效率可以提一提，节省那么些时间：去学习，去把妹(/泡哥)，去享受生活。如果可以，也殷切希望，以此篇介绍给不怎么爱折腾的朋友带来一点参考。王小波在《思维的乐趣》中引用罗素一言：<strong>「须知参差多态，乃是幸福的本源」</strong>；如果您不喜欢折腾，这里并无勉强之意；生活之事，快乐就好。</p>
+<p>最后自荐简书一专题<a href="http://www.jianshu.com/collection/2f6a49e22121" target="_blank" rel="external">《折腾之美》</a>：工欲善其事，必先利其器。大道至简：<strong>因为折腾，所以简洁</strong>；为爱折腾的你而生，欢请你的入盟(专题起源可参见<a href="http://www.jeffjade.com/2016/02/22/2016-02-22-beautiful-of-toss/#more" target="_blank" rel="external">折腾之美-序</a>)。</p>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2016/11/17/postName-8/" data-toggle="tooltip" data-placement="top"
+                           title="不花一分钱，搭建一个完全免费的Shadowsocks服务器">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载安装AutoHotkey"><span class="toc-text">下载安装AutoHotkey</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#建立AutoHotkey脚本"><span class="toc-text">建立AutoHotkey脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简单实用的实例"><span class="toc-text">简单实用的实例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#极速打开网页"><span class="toc-text">极速打开网页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#便捷呼出程序"><span class="toc-text">便捷呼出程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一键拷贝文件路径"><span class="toc-text">一键拷贝文件路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#改掉大写键为Enter"><span class="toc-text">改掉大写键为Enter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#缩写快速打出常用语"><span class="toc-text">缩写快速打出常用语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#颜色神偷"><span class="toc-text">颜色神偷</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#神速激活-打开-隐藏程序"><span class="toc-text">神速激活/打开/隐藏程序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#折腾AutoHotKey总结"><span class="toc-text">折腾AutoHotKey总结</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#AutoHotKey"
+                           title="AutoHotKey">AutoHotKey</a>
+                        
+                        <a class="tag" href="/tags/#windows"
+                           title="windows">windows</a>
+                        
+                        <a class="tag" href="/tags/#快捷"
+                           title="快捷">快捷</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/dui-lu-yo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/duiluyo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; duiluyo 2016
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://duiluyo.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="/avatar.png">
+</body>
+
+</html>
